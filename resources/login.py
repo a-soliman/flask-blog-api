@@ -14,10 +14,11 @@ import string
 
 from models.user import UserModel
 import security
+import os
 
 # refrencing the client secret file
 CLIENT_ID = json.loads(
-    open('client_secrets.json', 'r').read())['web']['client_id']
+    open('/var/www/html/items-rest/client_secrets.json', 'r').read())['web']['client_id']
 
 
 class Login(Resource):
