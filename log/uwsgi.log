@@ -771,3 +771,665 @@ announcing my loyalty to the Emperor...
 [pid: 1571|app: 0|req: 31/126] 172.104.108.109 () {34 vars in 388 bytes} [Thu Jun  7 12:43:00 2018] GET / => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 7)
 [pid: 1571|app: 0|req: 32/127] 187.131.218.125 () {32 vars in 463 bytes} [Thu Jun  7 13:14:34 2018] GET / => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 7)
 [pid: 1571|app: 0|req: 33/128] 68.65.67.34 () {40 vars in 533 bytes} [Thu Jun  7 13:39:27 2018] GET /categories => generated 109 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 188 bytes (1 switches on core 7)
+[pid: 1575|app: 0|req: 10/129] 81.162.202.10 () {32 vars in 461 bytes} [Thu Jun  7 14:01:18 2018] GET / => generated 233 bytes in 0 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 5)
+[pid: 1575|app: 0|req: 11/130] 68.65.67.34 () {46 vars in 743 bytes} [Thu Jun  7 14:07:56 2018] OPTIONS /auth => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 216 bytes (0 switches on core 5)
+[pid: 1576|app: 0|req: 25/131] 68.65.67.34 () {48 vars in 758 bytes} [Thu Jun  7 14:07:56 2018] POST /auth => generated 200 bytes in 56 msecs (HTTP/1.1 200) 5 headers in 188 bytes (1 switches on core 1)
+[pid: 1571|app: 0|req: 34/132] 68.65.67.34 () {46 vars in 745 bytes} [Thu Jun  7 14:07:56 2018] OPTIONS /posts => generated 0 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 221 bytes (0 switches on core 2)
+[pid: 1575|app: 0|req: 14/133] 68.65.67.34 () {46 vars in 752 bytes} [Thu Jun  7 14:07:56 2018] OPTIONS /user_id/4 => generated 0 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 221 bytes (0 switches on core 6)
+[pid: 1575|app: 0|req: 14/134] 68.65.67.34 () {42 vars in 658 bytes} [Thu Jun  7 14:07:56 2018] GET /categories => generated 109 bytes in 14 msecs (HTTP/1.1 200) 5 headers in 188 bytes (1 switches on core 7)
+[pid: 1575|app: 0|req: 14/135] 68.65.67.34 () {44 vars in 842 bytes} [Thu Jun  7 14:07:56 2018] GET /posts => generated 4394 bytes in 12 msecs (HTTP/1.1 200) 5 headers in 189 bytes (1 switches on core 2)
+identent  4
+id:  4
+[pid: 1571|app: 0|req: 35/136] 68.65.67.34 () {46 vars in 880 bytes} [Thu Jun  7 14:07:56 2018] GET /user_id/4 => generated 173 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 188 bytes (1 switches on core 0)
+[pid: 1571|app: 0|req: 36/137] 68.65.67.34 () {46 vars in 764 bytes} [Thu Jun  7 14:09:01 2018] OPTIONS /post/add => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 240 bytes (0 switches on core 5)
+[pid: 1571|app: 0|req: 37/138] 68.65.67.34 () {46 vars in 745 bytes} [Thu Jun  7 14:09:01 2018] OPTIONS /posts => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 221 bytes (0 switches on core 5)
+[pid: 1575|app: 0|req: 16/139] 68.65.67.34 () {44 vars in 841 bytes} [Thu Jun  7 14:09:01 2018] GET /posts => generated 4394 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 189 bytes (1 switches on core 0)
+[pid: 1575|app: 0|req: 16/140] 68.65.67.34 () {50 vars in 962 bytes} [Thu Jun  7 14:09:01 2018] POST /post/add => generated 35 bytes in 13 msecs (HTTP/1.1 201) 5 headers in 192 bytes (1 switches on core 3)
+[pid: 1571|app: 0|req: 38/141] 68.65.67.34 () {44 vars in 842 bytes} [Thu Jun  7 14:09:01 2018] GET /posts => generated 5017 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 189 bytes (1 switches on core 5)
+[pid: 1571|app: 0|req: 39/142] 68.65.67.34 () {46 vars in 762 bytes} [Thu Jun  7 14:09:40 2018] OPTIONS /post/12 => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 234 bytes (0 switches on core 4)
+here
+[pid: 1572|app: 0|req: 26/143] 68.65.67.34 () {48 vars in 928 bytes} [Thu Jun  7 14:09:40 2018] PUT /post/12 => generated 62 bytes in 10 msecs (HTTP/1.1 200) 5 headers in 187 bytes (1 switches on core 0)
+[pid: 1571|app: 0|req: 40/144] 68.65.67.34 () {46 vars in 745 bytes} [Thu Jun  7 14:09:40 2018] OPTIONS /posts => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 221 bytes (0 switches on core 1)
+[pid: 1576|app: 0|req: 26/145] 68.65.67.34 () {44 vars in 842 bytes} [Thu Jun  7 14:09:40 2018] GET /posts => generated 5001 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 189 bytes (1 switches on core 2)
+[pid: 1571|app: 0|req: 41/146] 68.65.67.34 () {46 vars in 745 bytes} [Thu Jun  7 14:10:10 2018] OPTIONS /login => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 216 bytes (0 switches on core 3)
+[2018-06-07 14:10:10,757] ERROR in app: Exception on /login [POST]
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask_restful/__init__.py", line 480, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask_restful/__init__.py", line 595, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/items-rest/resources/login.py", line 27, in post
+    args = json.loads(data)
+  File "/usr/lib/python3.5/json/__init__.py", line 312, in loads
+    s.__class__.__name__))
+TypeError: the JSON object must be str, not 'bytes'
+[pid: 1575|app: 0|req: 17/147] 68.65.67.34 () {48 vars in 773 bytes} [Thu Jun  7 14:10:10 2018] POST /login => generated 37 bytes in 3 msecs (HTTP/1.1 500) 5 headers in 206 bytes (1 switches on core 1)
+[pid: 1571|app: 0|req: 42/148] 68.65.67.34 () {46 vars in 743 bytes} [Thu Jun  7 14:10:10 2018] OPTIONS /auth => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 216 bytes (0 switches on core 7)
+Bad Request. Invalid credentials
+[pid: 1576|app: 0|req: 27/149] 68.65.67.34 () {48 vars in 758 bytes} [Thu Jun  7 14:10:10 2018] POST /auth => generated 78 bytes in 1 msecs (HTTP/1.1 401) 5 headers in 197 bytes (1 switches on core 5)
+[pid: 1571|app: 0|req: 43/150] 68.65.67.34 () {46 vars in 744 bytes} [Thu Jun  7 14:14:52 2018] OPTIONS /login => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 216 bytes (0 switches on core 2)
+[2018-06-07 14:14:53,033] ERROR in app: Exception on /login [POST]
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask_restful/__init__.py", line 480, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask_restful/__init__.py", line 595, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/items-rest/resources/login.py", line 27, in post
+    args = json.loads(data)
+  File "/usr/lib/python3.5/json/__init__.py", line 312, in loads
+    s.__class__.__name__))
+TypeError: the JSON object must be str, not 'bytes'
+[pid: 1576|app: 0|req: 28/151] 68.65.67.34 () {48 vars in 772 bytes} [Thu Jun  7 14:14:53 2018] POST /login => generated 37 bytes in 2 msecs (HTTP/1.1 500) 5 headers in 206 bytes (1 switches on core 4)
+[pid: 1573|app: 0|req: 10/152] 68.65.67.34 () {46 vars in 742 bytes} [Thu Jun  7 14:14:53 2018] OPTIONS /auth => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 216 bytes (0 switches on core 1)
+Bad Request. Invalid credentials
+[pid: 1571|app: 0|req: 44/153] 68.65.67.34 () {48 vars in 757 bytes} [Thu Jun  7 14:14:53 2018] POST /auth => generated 78 bytes in 1 msecs (HTTP/1.1 401) 5 headers in 197 bytes (1 switches on core 0)
+[pid: 1571|app: 0|req: 45/154] 68.65.67.34 () {46 vars in 744 bytes} [Thu Jun  7 14:15:02 2018] OPTIONS /login => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 216 bytes (0 switches on core 6)
+[2018-06-07 14:15:02,141] ERROR in app: Exception on /login [POST]
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask_restful/__init__.py", line 480, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask_restful/__init__.py", line 595, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/items-rest/resources/login.py", line 27, in post
+    args = json.loads(data)
+  File "/usr/lib/python3.5/json/__init__.py", line 312, in loads
+    s.__class__.__name__))
+TypeError: the JSON object must be str, not 'bytes'
+[pid: 1577|app: 0|req: 2/155] 68.65.67.34 () {48 vars in 772 bytes} [Thu Jun  7 14:15:02 2018] POST /login => generated 37 bytes in 3 msecs (HTTP/1.1 500) 5 headers in 206 bytes (1 switches on core 1)
+[pid: 1571|app: 0|req: 46/156] 68.65.67.34 () {46 vars in 742 bytes} [Thu Jun  7 14:15:02 2018] OPTIONS /auth => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 216 bytes (0 switches on core 5)
+Bad Request. Invalid credentials
+[pid: 1574|app: 0|req: 27/157] 68.65.67.34 () {48 vars in 757 bytes} [Thu Jun  7 14:15:02 2018] POST /auth => generated 78 bytes in 1 msecs (HTTP/1.1 401) 5 headers in 197 bytes (1 switches on core 2)
+[pid: 1571|app: 0|req: 47/158] 68.65.67.34 () {46 vars in 745 bytes} [Thu Jun  7 14:20:07 2018] OPTIONS /login => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 216 bytes (0 switches on core 4)
+[2018-06-07 14:20:07,389] ERROR in app: Exception on /login [POST]
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask_restful/__init__.py", line 480, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask_restful/__init__.py", line 595, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/items-rest/resources/login.py", line 27, in post
+    args = json.loads(data)
+  File "/usr/lib/python3.5/json/__init__.py", line 312, in loads
+    s.__class__.__name__))
+TypeError: the JSON object must be str, not 'bytes'
+[pid: 1574|app: 0|req: 28/159] 68.65.67.34 () {48 vars in 773 bytes} [Thu Jun  7 14:20:07 2018] POST /login => generated 37 bytes in 3 msecs (HTTP/1.1 500) 5 headers in 206 bytes (1 switches on core 3)
+[pid: 1576|app: 0|req: 29/160] 68.65.67.34 () {46 vars in 743 bytes} [Thu Jun  7 14:20:07 2018] OPTIONS /auth => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 216 bytes (0 switches on core 4)
+Bad Request. Invalid credentials
+[pid: 1572|app: 0|req: 27/161] 68.65.67.34 () {48 vars in 758 bytes} [Thu Jun  7 14:20:07 2018] POST /auth => generated 78 bytes in 1 msecs (HTTP/1.1 401) 5 headers in 197 bytes (1 switches on core 2)
+[pid: 1571|app: 0|req: 48/162] 68.65.67.34 () {46 vars in 745 bytes} [Thu Jun  7 14:29:15 2018] OPTIONS /login => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 216 bytes (0 switches on core 4)
+[2018-06-07 14:29:15,886] ERROR in app: Exception on /login [POST]
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask_restful/__init__.py", line 480, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask_restful/__init__.py", line 595, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/items-rest/resources/login.py", line 27, in post
+    args = json.loads(data.decode('utf-8'))
+  File "/usr/lib/python3.5/json/__init__.py", line 312, in loads
+    s.__class__.__name__))
+TypeError: the JSON object must be str, not 'bytes'
+[pid: 1574|app: 0|req: 29/163] 68.65.67.34 () {48 vars in 773 bytes} [Thu Jun  7 14:29:15 2018] POST /login => generated 37 bytes in 1 msecs (HTTP/1.1 500) 5 headers in 206 bytes (1 switches on core 3)
+[pid: 1577|app: 0|req: 3/164] 68.65.67.34 () {46 vars in 743 bytes} [Thu Jun  7 14:29:15 2018] OPTIONS /auth => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 216 bytes (0 switches on core 2)
+Bad Request. Invalid credentials
+[pid: 1577|app: 0|req: 4/165] 68.65.67.34 () {48 vars in 758 bytes} [Thu Jun  7 14:29:16 2018] POST /auth => generated 78 bytes in 1 msecs (HTTP/1.1 401) 5 headers in 197 bytes (1 switches on core 3)
+[pid: 1571|app: 0|req: 49/166] 68.65.67.34 () {46 vars in 745 bytes} [Thu Jun  7 14:30:17 2018] OPTIONS /login => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 216 bytes (0 switches on core 4)
+[2018-06-07 14:30:17,425] ERROR in app: Exception on /login [POST]
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask_restful/__init__.py", line 480, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask_restful/__init__.py", line 595, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/items-rest/resources/login.py", line 27, in post
+    args = json.loads(data.decode('utf-8'))
+  File "/usr/lib/python3.5/json/__init__.py", line 312, in loads
+    s.__class__.__name__))
+TypeError: the JSON object must be str, not 'bytes'
+[pid: 1577|app: 0|req: 5/167] 68.65.67.34 () {48 vars in 773 bytes} [Thu Jun  7 14:30:17 2018] POST /login => generated 37 bytes in 1 msecs (HTTP/1.1 500) 5 headers in 206 bytes (1 switches on core 4)
+[pid: 1575|app: 0|req: 18/168] 68.65.67.34 () {46 vars in 743 bytes} [Thu Jun  7 14:30:17 2018] OPTIONS /auth => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 216 bytes (0 switches on core 4)
+Bad Request. Invalid credentials
+[pid: 1575|app: 0|req: 19/169] 68.65.67.34 () {48 vars in 758 bytes} [Thu Jun  7 14:30:17 2018] POST /auth => generated 78 bytes in 1 msecs (HTTP/1.1 401) 5 headers in 197 bytes (1 switches on core 5)
+SIGINT/SIGQUIT received...killing workers...
+Thu Jun  7 14:32:50 2018 - received message 0 from emperor
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+worker 5 buried after 2 seconds
+worker 6 buried after 2 seconds
+worker 7 buried after 2 seconds
+worker 8 buried after 2 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17 (64bit) on [Thu Jun  7 14:32:54 2018] ***
+compiled with version: 5.4.0 20160609 on 07 June 2018 00:21:50
+os: Linux-4.4.0-1060-aws #69-Ubuntu SMP Sun May 20 13:42:07 UTC 2018
+nodename: ip-172-31-20-95
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /var/www/html/items-rest/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 3900
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /var/www/html/items-rest/socket.sock fd 3
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Set PythonHome to /var/www/html/items-rest/venv
+Python main interpreter initialized at 0x1563f20
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1315008 bytes (1284 KB) for 64 cores
+*** Operational MODE: preforking+threaded ***
+added /var/www/html/items-rest/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1563f20 pid: 4670 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4670)
+spawned uWSGI worker 1 (pid: 4674, cores: 8)
+spawned uWSGI worker 2 (pid: 4675, cores: 8)
+spawned uWSGI worker 3 (pid: 4676, cores: 8)
+spawned uWSGI worker 4 (pid: 4677, cores: 8)
+spawned uWSGI worker 5 (pid: 4678, cores: 8)
+spawned uWSGI worker 6 (pid: 4679, cores: 8)
+spawned uWSGI worker 7 (pid: 4680, cores: 8)
+spawned uWSGI worker 8 (pid: 4681, cores: 8)
+*** Starting uWSGI 2.0.17 (64bit) on [Thu Jun  7 14:36:22 2018] ***
+compiled with version: 5.4.0 20160609 on 07 June 2018 00:21:50
+os: Linux-4.4.0-1060-aws #69-Ubuntu SMP Sun May 20 13:42:07 UTC 2018
+nodename: ip-172-31-20-95
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /var/www/html/items-rest/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 3900
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /var/www/html/items-rest/socket.sock fd 3
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Set PythonHome to /var/www/html/items-rest/venv
+Python main interpreter initialized at 0x7b6f20
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1315008 bytes (1284 KB) for 64 cores
+*** Operational MODE: preforking+threaded ***
+added /var/www/html/items-rest/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7b6f20 pid: 1575 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1575)
+spawned uWSGI worker 1 (pid: 1580, cores: 8)
+spawned uWSGI worker 2 (pid: 1581, cores: 8)
+spawned uWSGI worker 3 (pid: 1582, cores: 8)
+spawned uWSGI worker 4 (pid: 1583, cores: 8)
+spawned uWSGI worker 5 (pid: 1584, cores: 8)
+spawned uWSGI worker 6 (pid: 1585, cores: 8)
+spawned uWSGI worker 7 (pid: 1586, cores: 8)
+spawned uWSGI worker 8 (pid: 1587, cores: 8)
+Creating tables
+[pid: 1584|app: 0|req: 1/1] 68.65.67.34 () {40 vars in 523 bytes} [Thu Jun  7 14:36:28 2018] GET /users => generated 747 bytes in 33 msecs (HTTP/1.1 200) 5 headers in 188 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 1584|app: 0|req: 2/2] 68.65.67.34 () {46 vars in 745 bytes} [Thu Jun  7 14:36:42 2018] OPTIONS /login => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 216 bytes (0 switches on core 1)
+Creating tables
+[2018-06-07 14:36:42,107] ERROR in app: Exception on /login [POST]
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/clientsecrets.py", line 121, in _loadfile
+    with open(filename, 'r') as fp:
+FileNotFoundError: [Errno 2] No such file or directory: 'client_secrets.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask_restful/__init__.py", line 480, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask_restful/__init__.py", line 595, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/items-rest/resources/login.py", line 41, in post
+    oauth_flow = flow_from_clientsecrets('client_secrets.json', scope='')
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/_helpers.py", line 133, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/client.py", line 2135, in flow_from_clientsecrets
+    cache=cache)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/clientsecrets.py", line 165, in loadfile
+    return _loadfile(filename)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/clientsecrets.py", line 125, in _loadfile
+    exc.strerror, exc.errno)
+oauth2client.clientsecrets.InvalidClientSecretsError: ('Error opening file', 'client_secrets.json', 'No such file or directory', 2)
+[pid: 1581|app: 0|req: 1/3] 68.65.67.34 () {48 vars in 773 bytes} [Thu Jun  7 14:36:42 2018] POST /login => generated 37 bytes in 25 msecs (HTTP/1.1 500) 5 headers in 206 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 1581|app: 0|req: 2/4] 68.65.67.34 () {46 vars in 743 bytes} [Thu Jun  7 14:36:42 2018] OPTIONS /auth => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 216 bytes (0 switches on core 1)
+Creating tables
+Bad Request. Invalid credentials
+[pid: 1587|app: 0|req: 1/5] 68.65.67.34 () {48 vars in 758 bytes} [Thu Jun  7 14:36:42 2018] POST /auth => generated 78 bytes in 16 msecs (HTTP/1.1 401) 5 headers in 197 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 1587|app: 0|req: 2/6] 68.65.67.34 () {46 vars in 745 bytes} [Thu Jun  7 14:48:57 2018] OPTIONS /login => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 216 bytes (0 switches on core 1)
+Creating tables
+[2018-06-07 14:48:57,201] ERROR in app: Exception on /login [POST]
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/clientsecrets.py", line 121, in _loadfile
+    with open(filename, 'r') as fp:
+FileNotFoundError: [Errno 2] No such file or directory: 'client_secrets.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask_restful/__init__.py", line 480, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask_restful/__init__.py", line 595, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/items-rest/resources/login.py", line 41, in post
+    oauth_flow = flow_from_clientsecrets('client_secrets.json', scope='')
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/_helpers.py", line 133, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/client.py", line 2135, in flow_from_clientsecrets
+    cache=cache)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/clientsecrets.py", line 165, in loadfile
+    return _loadfile(filename)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/clientsecrets.py", line 125, in _loadfile
+    exc.strerror, exc.errno)
+oauth2client.clientsecrets.InvalidClientSecretsError: ('Error opening file', 'client_secrets.json', 'No such file or directory', 2)
+[pid: 1586|app: 0|req: 1/7] 68.65.67.34 () {48 vars in 773 bytes} [Thu Jun  7 14:48:57 2018] POST /login => generated 37 bytes in 19 msecs (HTTP/1.1 500) 5 headers in 206 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 1587|app: 0|req: 3/8] 68.65.67.34 () {46 vars in 743 bytes} [Thu Jun  7 14:48:57 2018] OPTIONS /auth => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 216 bytes (0 switches on core 1)
+Creating tables
+Bad Request. Invalid credentials
+[pid: 1582|app: 0|req: 1/9] 68.65.67.34 () {48 vars in 758 bytes} [Thu Jun  7 14:48:57 2018] POST /auth => generated 78 bytes in 16 msecs (HTTP/1.1 401) 5 headers in 197 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 1587|app: 0|req: 4/10] 68.65.67.34 () {46 vars in 745 bytes} [Thu Jun  7 14:50:59 2018] OPTIONS /login => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 216 bytes (0 switches on core 6)
+Creating tables
+[2018-06-07 14:51:00,003] ERROR in app: Exception on /login [POST]
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/clientsecrets.py", line 121, in _loadfile
+    with open(filename, 'r') as fp:
+FileNotFoundError: [Errno 2] No such file or directory: 'client_secrets.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask_restful/__init__.py", line 480, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask_restful/__init__.py", line 595, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/items-rest/resources/login.py", line 41, in post
+    oauth_flow = flow_from_clientsecrets('client_secrets.json', scope='')
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/_helpers.py", line 133, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/client.py", line 2135, in flow_from_clientsecrets
+    cache=cache)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/clientsecrets.py", line 165, in loadfile
+    return _loadfile(filename)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/clientsecrets.py", line 125, in _loadfile
+    exc.strerror, exc.errno)
+oauth2client.clientsecrets.InvalidClientSecretsError: ('Error opening file', 'client_secrets.json', 'No such file or directory', 2)
+[pid: 1585|app: 0|req: 1/11] 68.65.67.34 () {48 vars in 773 bytes} [Thu Jun  7 14:50:59 2018] POST /login => generated 37 bytes in 19 msecs (HTTP/1.1 500) 5 headers in 206 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 1587|app: 0|req: 5/12] 68.65.67.34 () {46 vars in 743 bytes} [Thu Jun  7 14:51:00 2018] OPTIONS /auth => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 216 bytes (0 switches on core 6)
+Creating tables
+Bad Request. Invalid credentials
+[pid: 1583|app: 0|req: 1/13] 68.65.67.34 () {48 vars in 758 bytes} [Thu Jun  7 14:51:00 2018] POST /auth => generated 78 bytes in 16 msecs (HTTP/1.1 401) 5 headers in 197 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 1587|app: 0|req: 6/14] 68.65.67.34 () {46 vars in 745 bytes} [Thu Jun  7 14:52:11 2018] OPTIONS /login => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 216 bytes (0 switches on core 3)
+Creating tables
+[2018-06-07 14:52:11,937] ERROR in app: Exception on /login [POST]
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/clientsecrets.py", line 121, in _loadfile
+    with open(filename, 'r') as fp:
+FileNotFoundError: [Errno 2] No such file or directory: 'client_secrets.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask_restful/__init__.py", line 480, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask_restful/__init__.py", line 595, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/items-rest/resources/login.py", line 41, in post
+    oauth_flow = flow_from_clientsecrets('client_secrets.json', scope='')
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/_helpers.py", line 133, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/client.py", line 2135, in flow_from_clientsecrets
+    cache=cache)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/clientsecrets.py", line 165, in loadfile
+    return _loadfile(filename)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/clientsecrets.py", line 125, in _loadfile
+    exc.strerror, exc.errno)
+oauth2client.clientsecrets.InvalidClientSecretsError: ('Error opening file', 'client_secrets.json', 'No such file or directory', 2)
+[pid: 1580|app: 0|req: 1/15] 68.65.67.34 () {48 vars in 773 bytes} [Thu Jun  7 14:52:11 2018] POST /login => generated 37 bytes in 19 msecs (HTTP/1.1 500) 5 headers in 206 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 1587|app: 0|req: 7/16] 68.65.67.34 () {46 vars in 743 bytes} [Thu Jun  7 14:52:12 2018] OPTIONS /auth => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 216 bytes (0 switches on core 2)
+Bad Request. Invalid credentials
+[pid: 1582|app: 0|req: 2/17] 68.65.67.34 () {48 vars in 758 bytes} [Thu Jun  7 14:52:12 2018] POST /auth => generated 78 bytes in 1 msecs (HTTP/1.1 401) 5 headers in 197 bytes (1 switches on core 1)
+[pid: 1587|app: 0|req: 8/18] 68.65.67.34 () {46 vars in 745 bytes} [Thu Jun  7 15:01:50 2018] OPTIONS /login => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 216 bytes (0 switches on core 7)
+[2018-06-07 15:01:50,462] ERROR in app: Exception on /login [POST]
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/clientsecrets.py", line 121, in _loadfile
+    with open(filename, 'r') as fp:
+FileNotFoundError: [Errno 2] No such file or directory: 'client_secrets.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask_restful/__init__.py", line 480, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask_restful/__init__.py", line 595, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/items-rest/resources/login.py", line 41, in post
+    oauth_flow = flow_from_clientsecrets('client_secrets.json', scope='')
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/_helpers.py", line 133, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/client.py", line 2135, in flow_from_clientsecrets
+    cache=cache)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/clientsecrets.py", line 165, in loadfile
+    return _loadfile(filename)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/clientsecrets.py", line 125, in _loadfile
+    exc.strerror, exc.errno)
+oauth2client.clientsecrets.InvalidClientSecretsError: ('Error opening file', 'client_secrets.json', 'No such file or directory', 2)
+[pid: 1583|app: 0|req: 2/19] 68.65.67.34 () {48 vars in 773 bytes} [Thu Jun  7 15:01:50 2018] POST /login => generated 37 bytes in 4 msecs (HTTP/1.1 500) 5 headers in 206 bytes (1 switches on core 1)
+[pid: 1587|app: 0|req: 9/20] 68.65.67.34 () {46 vars in 743 bytes} [Thu Jun  7 15:01:50 2018] OPTIONS /auth => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 216 bytes (0 switches on core 7)
+Bad Request. Invalid credentials
+[pid: 1583|app: 0|req: 3/21] 68.65.67.34 () {48 vars in 758 bytes} [Thu Jun  7 15:01:50 2018] POST /auth => generated 78 bytes in 1 msecs (HTTP/1.1 401) 5 headers in 197 bytes (1 switches on core 2)
+[pid: 1587|app: 0|req: 10/22] 185.227.64.48 () {32 vars in 460 bytes} [Thu Jun  7 15:07:48 2018] GET / => generated 233 bytes in 3 msecs (HTTP/1.1 404) 5 headers in 188 bytes (1 switches on core 5)
+[pid: 1587|app: 0|req: 11/23] 68.65.67.34 () {46 vars in 745 bytes} [Thu Jun  7 15:09:35 2018] OPTIONS /login => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 216 bytes (0 switches on core 1)
+[2018-06-07 15:09:35,460] ERROR in app: Exception on /login [POST]
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/clientsecrets.py", line 121, in _loadfile
+    with open(filename, 'r') as fp:
+FileNotFoundError: [Errno 2] No such file or directory: 'client_secrets.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask_restful/__init__.py", line 480, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask_restful/__init__.py", line 595, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/items-rest/resources/login.py", line 41, in post
+    oauth_flow = flow_from_clientsecrets('/var/www/html/items-rest/client_secrets.json', scope='')
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/_helpers.py", line 133, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/client.py", line 2135, in flow_from_clientsecrets
+    cache=cache)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/clientsecrets.py", line 165, in loadfile
+    return _loadfile(filename)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/clientsecrets.py", line 125, in _loadfile
+    exc.strerror, exc.errno)
+oauth2client.clientsecrets.InvalidClientSecretsError: ('Error opening file', 'client_secrets.json', 'No such file or directory', 2)
+[pid: 1580|app: 0|req: 2/24] 68.65.67.34 () {48 vars in 773 bytes} [Thu Jun  7 15:09:35 2018] POST /login => generated 37 bytes in 1 msecs (HTTP/1.1 500) 5 headers in 206 bytes (1 switches on core 1)
+[pid: 1581|app: 0|req: 3/25] 68.65.67.34 () {46 vars in 743 bytes} [Thu Jun  7 15:09:35 2018] OPTIONS /auth => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 216 bytes (0 switches on core 2)
+Bad Request. Invalid credentials
+[pid: 1581|app: 0|req: 4/26] 68.65.67.34 () {48 vars in 758 bytes} [Thu Jun  7 15:09:35 2018] POST /auth => generated 78 bytes in 1 msecs (HTTP/1.1 401) 5 headers in 197 bytes (1 switches on core 3)
+[pid: 1580|app: 0|req: 3/27] 68.65.67.34 () {46 vars in 745 bytes} [Thu Jun  7 15:09:44 2018] OPTIONS /login => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 216 bytes (0 switches on core 2)
+[2018-06-07 15:09:44,693] ERROR in app: Exception on /login [POST]
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/clientsecrets.py", line 121, in _loadfile
+    with open(filename, 'r') as fp:
+FileNotFoundError: [Errno 2] No such file or directory: 'client_secrets.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask_restful/__init__.py", line 480, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask_restful/__init__.py", line 595, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/items-rest/resources/login.py", line 41, in post
+    oauth_flow = flow_from_clientsecrets('/var/www/html/items-rest/client_secrets.json', scope='')
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/_helpers.py", line 133, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/client.py", line 2135, in flow_from_clientsecrets
+    cache=cache)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/clientsecrets.py", line 165, in loadfile
+    return _loadfile(filename)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/clientsecrets.py", line 125, in _loadfile
+    exc.strerror, exc.errno)
+oauth2client.clientsecrets.InvalidClientSecretsError: ('Error opening file', 'client_secrets.json', 'No such file or directory', 2)
+[pid: 1586|app: 0|req: 2/28] 68.65.67.34 () {48 vars in 773 bytes} [Thu Jun  7 15:09:44 2018] POST /login => generated 37 bytes in 1 msecs (HTTP/1.1 500) 5 headers in 206 bytes (1 switches on core 1)
+[pid: 1583|app: 0|req: 4/29] 68.65.67.34 () {46 vars in 743 bytes} [Thu Jun  7 15:09:44 2018] OPTIONS /auth => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 216 bytes (0 switches on core 3)
+Bad Request. Invalid credentials
+[pid: 1583|app: 0|req: 5/30] 68.65.67.34 () {48 vars in 758 bytes} [Thu Jun  7 15:09:44 2018] POST /auth => generated 78 bytes in 1 msecs (HTTP/1.1 401) 5 headers in 197 bytes (1 switches on core 4)
+[pid: 1587|app: 0|req: 12/31] 68.65.67.34 () {46 vars in 745 bytes} [Thu Jun  7 15:12:20 2018] OPTIONS /login => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 216 bytes (0 switches on core 1)
+[2018-06-07 15:12:21,050] ERROR in app: Exception on /login [POST]
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/clientsecrets.py", line 121, in _loadfile
+    with open(filename, 'r') as fp:
+FileNotFoundError: [Errno 2] No such file or directory: 'client_secrets.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask_restful/__init__.py", line 480, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/flask_restful/__init__.py", line 595, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/items-rest/resources/login.py", line 41, in post
+    oauth_flow = flow_from_clientsecrets('/var/www/html/items-rest/client_secrets.json', scope='')
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/_helpers.py", line 133, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/client.py", line 2135, in flow_from_clientsecrets
+    cache=cache)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/clientsecrets.py", line 165, in loadfile
+    return _loadfile(filename)
+  File "/var/www/html/items-rest/venv/lib/python3.5/site-packages/oauth2client/clientsecrets.py", line 125, in _loadfile
+    exc.strerror, exc.errno)
+oauth2client.clientsecrets.InvalidClientSecretsError: ('Error opening file', 'client_secrets.json', 'No such file or directory', 2)
+[pid: 1581|app: 0|req: 5/32] 68.65.67.34 () {48 vars in 773 bytes} [Thu Jun  7 15:12:21 2018] POST /login => generated 37 bytes in 1 msecs (HTTP/1.1 500) 5 headers in 206 bytes (1 switches on core 4)
+[pid: 1586|app: 0|req: 3/33] 68.65.67.34 () {46 vars in 743 bytes} [Thu Jun  7 15:12:21 2018] OPTIONS /auth => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 216 bytes (0 switches on core 2)
+Bad Request. Invalid credentials
+[pid: 1586|app: 0|req: 4/34] 68.65.67.34 () {48 vars in 758 bytes} [Thu Jun  7 15:12:21 2018] POST /auth => generated 78 bytes in 1 msecs (HTTP/1.1 401) 5 headers in 197 bytes (1 switches on core 3)
+Thu Jun  7 15:12:50 2018 - received message 0 from emperor
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+worker 5 buried after 2 seconds
+worker 6 buried after 2 seconds
+worker 7 buried after 2 seconds
+worker 8 buried after 2 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17 (64bit) on [Thu Jun  7 15:12:55 2018] ***
+compiled with version: 5.4.0 20160609 on 07 June 2018 00:21:50
+os: Linux-4.4.0-1060-aws #69-Ubuntu SMP Sun May 20 13:42:07 UTC 2018
+nodename: ip-172-31-20-95
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /var/www/html/items-rest/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 3900
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /var/www/html/items-rest/socket.sock fd 3
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Set PythonHome to /var/www/html/items-rest/venv
+Python main interpreter initialized at 0xa5df20
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1315008 bytes (1284 KB) for 64 cores
+*** Operational MODE: preforking+threaded ***
+added /var/www/html/items-rest/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xa5df20 pid: 1999 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1999)
+spawned uWSGI worker 1 (pid: 2003, cores: 8)
+spawned uWSGI worker 2 (pid: 2004, cores: 8)
+spawned uWSGI worker 3 (pid: 2005, cores: 8)
+spawned uWSGI worker 4 (pid: 2006, cores: 8)
+spawned uWSGI worker 5 (pid: 2007, cores: 8)
+spawned uWSGI worker 6 (pid: 2008, cores: 8)
+spawned uWSGI worker 7 (pid: 2009, cores: 8)
+spawned uWSGI worker 8 (pid: 2010, cores: 8)
+*** Starting uWSGI 2.0.17 (64bit) on [Thu Jun  7 15:14:20 2018] ***
+compiled with version: 5.4.0 20160609 on 07 June 2018 00:21:50
+os: Linux-4.4.0-1060-aws #69-Ubuntu SMP Sun May 20 13:42:07 UTC 2018
+nodename: ip-172-31-20-95
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /var/www/html/items-rest/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 3900
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /var/www/html/items-rest/socket.sock fd 3
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Set PythonHome to /var/www/html/items-rest/venv
+Python main interpreter initialized at 0xb26f20
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1315008 bytes (1284 KB) for 64 cores
+*** Operational MODE: preforking+threaded ***
+added /var/www/html/items-rest/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xb26f20 pid: 2103 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 2103)
+spawned uWSGI worker 1 (pid: 2107, cores: 8)
+spawned uWSGI worker 2 (pid: 2108, cores: 8)
+spawned uWSGI worker 3 (pid: 2109, cores: 8)
+spawned uWSGI worker 4 (pid: 2110, cores: 8)
+spawned uWSGI worker 5 (pid: 2111, cores: 8)
+spawned uWSGI worker 6 (pid: 2112, cores: 8)
+spawned uWSGI worker 7 (pid: 2113, cores: 8)
+spawned uWSGI worker 8 (pid: 2128, cores: 8)
+Creating tables
+[pid: 2109|app: 0|req: 1/1] 68.65.67.34 () {46 vars in 744 bytes} [Thu Jun  7 15:14:34 2018] OPTIONS /login => generated 0 bytes in 15 msecs (HTTP/1.1 200) 6 headers in 216 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 2109|app: 0|req: 2/2] 68.65.67.34 () {48 vars in 772 bytes} [Thu Jun  7 15:14:34 2018] POST /login => generated 202 bytes in 715 msecs (HTTP/1.1 200) 5 headers in 188 bytes (1 switches on core 1)
+[pid: 2109|app: 0|req: 3/3] 68.65.67.34 () {46 vars in 742 bytes} [Thu Jun  7 15:14:35 2018] OPTIONS /auth => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 216 bytes (0 switches on core 2)
+Creating tables
+[pid: 2112|app: 0|req: 1/4] 68.65.67.34 () {48 vars in 757 bytes} [Thu Jun  7 15:14:35 2018] POST /auth => generated 200 bytes in 72 msecs (HTTP/1.1 200) 5 headers in 188 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 2112|app: 0|req: 2/5] 68.65.67.34 () {46 vars in 744 bytes} [Thu Jun  7 15:14:35 2018] OPTIONS /posts => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 221 bytes (0 switches on core 3)
+Creating tables
+[pid: 2110|app: 0|req: 1/6] 68.65.67.34 () {46 vars in 752 bytes} [Thu Jun  7 15:14:35 2018] OPTIONS /user_id/1 => generated 0 bytes in 15 msecs (HTTP/1.1 200) 6 headers in 221 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+Creating tables
+[pid: 2112|app: 0|req: 3/7] 68.65.67.34 () {42 vars in 657 bytes} [Thu Jun  7 15:14:36 2018] GET /categories => generated 109 bytes in 13 msecs (HTTP/1.1 200) 5 headers in 188 bytes (1 switches on core 5)
+identent  1
+id:  1
+[pid: 2110|app: 0|req: 2/8] 68.65.67.34 () {46 vars in 880 bytes} [Thu Jun  7 15:14:36 2018] GET /user_id/1 => generated 202 bytes in 28 msecs (HTTP/1.1 200) 5 headers in 188 bytes (1 switches on core 1)
+[pid: 2107|app: 0|req: 1/9] 68.65.67.34 () {44 vars in 842 bytes} [Thu Jun  7 15:14:36 2018] GET /posts => generated 5001 bytes in 40 msecs (HTTP/1.1 200) 5 headers in 189 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 2107|app: 0|req: 2/10] 68.65.67.34 () {46 vars in 745 bytes} [Thu Jun  7 15:15:04 2018] OPTIONS /login => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 216 bytes (0 switches on core 1)
+Creating tables
+[pid: 2111|app: 0|req: 1/11] 68.65.67.34 () {48 vars in 773 bytes} [Thu Jun  7 15:15:04 2018] POST /login => generated 189 bytes in 1879 msecs (HTTP/1.1 200) 5 headers in 188 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 2107|app: 0|req: 3/12] 68.65.67.34 () {46 vars in 743 bytes} [Thu Jun  7 15:15:06 2018] OPTIONS /auth => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 216 bytes (0 switches on core 2)
+[pid: 2110|app: 0|req: 3/13] 68.65.67.34 () {48 vars in 758 bytes} [Thu Jun  7 15:15:06 2018] POST /auth => generated 200 bytes in 53 msecs (HTTP/1.1 200) 5 headers in 188 bytes (1 switches on core 2)
+[pid: 2111|app: 0|req: 2/14] 68.65.67.34 () {46 vars in 752 bytes} [Thu Jun  7 15:15:06 2018] OPTIONS /user_id/2 => generated 0 bytes in 3 msecs (HTTP/1.1 200) 6 headers in 221 bytes (0 switches on core 1)
+[pid: 2107|app: 0|req: 4/15] 68.65.67.34 () {46 vars in 745 bytes} [Thu Jun  7 15:15:06 2018] OPTIONS /posts => generated 0 bytes in 4 msecs (HTTP/1.1 200) 6 headers in 221 bytes (0 switches on core 3)
+[pid: 2110|app: 0|req: 4/16] 68.65.67.34 () {42 vars in 657 bytes} [Thu Jun  7 15:15:06 2018] GET /categories => generated 109 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 188 bytes (1 switches on core 3)
+identent  2
+id:  2
+[pid: 2111|app: 0|req: 3/17] 68.65.67.34 () {46 vars in 880 bytes} [Thu Jun  7 15:15:06 2018] GET /user_id/2 => generated 189 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 188 bytes (1 switches on core 4)
+[pid: 2107|app: 0|req: 5/18] 68.65.67.34 () {44 vars in 842 bytes} [Thu Jun  7 15:15:06 2018] GET /posts => generated 4999 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 189 bytes (1 switches on core 4)
+[pid: 2107|app: 0|req: 6/19] 68.65.67.34 () {46 vars in 760 bytes} [Thu Jun  7 15:15:42 2018] OPTIONS /post/9 => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 234 bytes (0 switches on core 5)
+here
+[pid: 2111|app: 0|req: 4/20] 68.65.67.34 () {48 vars in 926 bytes} [Thu Jun  7 15:15:42 2018] PUT /post/9 => generated 62 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 187 bytes (1 switches on core 6)
+[pid: 2107|app: 0|req: 7/21] 68.65.67.34 () {46 vars in 745 bytes} [Thu Jun  7 15:15:42 2018] OPTIONS /posts => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 221 bytes (0 switches on core 6)
+Creating tables
+[pid: 2113|app: 0|req: 1/22] 68.65.67.34 () {44 vars in 842 bytes} [Thu Jun  7 15:15:42 2018] GET /posts => generated 4986 bytes in 27 msecs (HTTP/1.1 200) 5 headers in 189 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 2107|app: 0|req: 8/23] 68.65.67.34 () {46 vars in 745 bytes} [Thu Jun  7 15:16:25 2018] OPTIONS /posts => generated 0 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 221 bytes (0 switches on core 7)
+[pid: 2110|app: 0|req: 5/24] 68.65.67.34 () {42 vars in 658 bytes} [Thu Jun  7 15:16:25 2018] GET /categories => generated 109 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 188 bytes (1 switches on core 4)
+[pid: 2110|app: 0|req: 6/25] 68.65.67.34 () {44 vars in 842 bytes} [Thu Jun  7 15:16:25 2018] GET /posts => generated 4986 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 189 bytes (1 switches on core 5)

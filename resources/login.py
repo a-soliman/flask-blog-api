@@ -24,7 +24,7 @@ CLIENT_ID = json.loads(
 class Login(Resource):
     def post(self):
         data = request.data
-        args = json.loads(data)
+        args = json.loads(data.decode('utf-8'))
 
         # check if data were passed
         if args['code'] is None:
@@ -38,7 +38,7 @@ class Login(Resource):
 
         try:
             # upgrade the authorization code into a credentials object
-            oauth_flow = flow_from_clientsecrets('client_secrets.json', scope='')
+            oauth_flow = flow_from_clientsecrets('/var/www/html/items-rest/client_secrets.json', scope='')
             oauth_flow.redirect_uri = 'postmessage'
             credentials = oauth_flow.step2_exchange(code)
             access_token = credentials.access_token
@@ -52,7 +52,7 @@ class Login(Resource):
         # Check that the access token is valid
         url = ('https://www.googleapis.com/oauth2/v1/tokeninfo?access_token={}'.format(access_token))
         h = httplib2.Http()
-        result = json.loads(h.request(url, 'GET')[1])
+        result = json.loads(h.request(url, 'GET')[1].decode('utf-8'))
 
         # if there was an error in the access token info, abort
         if result.get('error') is not None:
