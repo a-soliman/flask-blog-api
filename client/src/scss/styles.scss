@@ -1,0 +1,62 @@
+@import "./partials/vars";
+@import "./reset/basic-reset";
+
+header {
+	border-bottom: 2px solid $grey;
+	margin-bottom: 0.75em;
+
+	.blog-header-logo {
+		font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+		font-size: 2.25rem;
+	}
+}
+
+.google-custom {
+	padding: 0 20px 0 0;
+	background-color: #DD4B39;
+	color: white;
+	height: 50px;
+	font-size: 22px;
+
+	span {
+		display: inline-block;
+		height: 100%;
+		padding-top: 7px;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-right: 10px;
+		border-right: 2px solid white;
+	}
+
+	&:hover {
+		background-color: #E74B37;
+	}
+}
+
+.categories {
+	.dynamic-categories {
+		display: inline-block;
+	}
+	.flex-container {
+		display: flex;
+	}
+	.flex-item {
+		flex-grow:1;
+		margin: 0 2px;
+	}
+}
+.overflow {
+	overflow: hidden;
+}
+main {
+	.row {
+		margin-bottom: 0.75em;
+	}
+	.posts {}
+	.post-container {}
+
+	.post {
+		padding: 0 20px;
+	}
+	
+}
