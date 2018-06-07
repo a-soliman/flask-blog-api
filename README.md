@@ -1,6 +1,17 @@
 # Tech Blog
 ## Flask RESTful APP
 
+### Server Details: 
+- #### IP ADDRESS: 18.221.127.237
+- #### SSH port: 2200 
+- #### URL: http://ec2-18-221-127-237.us-east-2.compute.amazonaws.com/  #NOTE BELOW#
+The url will display 404, because there is no content at the home page of the rest API, Add /categories at the end of the url and the categories will be displayed.
+- for connecting use, the follwoing after correcting the location for /.ssh/
+    ```bash
+    ssh grader@18.221.127.237 -p 2200 -i ~/.ssh/awsServer
+    ```
+
+
 ### Technologies:
 1. Server Side
     - Python 3.6
@@ -11,6 +22,7 @@
     - OAuth2
     - JWT
     - werkzeug.security (for hashing passwords).
+    - AWS
 
 1. Client Side
     - KnockOut.js
@@ -22,8 +34,7 @@
     - Font-Awesome
 
 ----
-### Installation:
-1. Install [Python 3.6](https://www.python.org/downloads/)
+### Installation (CLIENT SIDE ONLY):
 1. Install [Node](https://nodejs.org/en/)
 1. Install Gulp CLI
     ```bash
@@ -32,24 +43,12 @@
     ```
 1. Clone this REPO
     ```bash
-    git clone https://github.com/a-soliman/python-restful-blog.git
+    git clone https://github.com/a-soliman/flask-blog-api.git
     ```
     ```bash
     cd python-restful-blog/
     ```
-1. Install and activate [Python virtualenv](https://virtualenv.pypa.io/en/stable/), (recomended).
-1. Install the requirments for SERVER-SIDE
-    ```bash
-    pip install Flask==1.0.2
-    pip install Flask-RESTful==0.3.6
-    pip install Flask-JWT==0.3.2
-    pip install Flask-SQLAlchemy==2.3.2
-    pip install httplib2==0.11.3
-    pip install oauth2client==4.1.2
-    pip install requests==2.18.4
-    pip install SQLAlchemy==1.2.7
-    pip install datetime
-    ```
+
 
 1. Install the requirments for CLIENT-SIDE
     1. From the root '/ ' Navigate to client/
@@ -62,16 +61,8 @@
     npm install
     ```
 ----
-### Run Application:
-1. from the root '/ ' Navigate to server/
-    ```bash
-    cd server/
-    ```
-1. Run app.py
-    ```bash
-    python app.py
-    ```
-1. With the server runing, open a new bash terminal and navigate to client from the root '/ '
+### Running the client side code:
+1. Navigate to client from the root '/ '
     ```bash
     cd client/
     ```
@@ -79,15 +70,15 @@
 1. Run 'gulp server' to complile the application.
 
     ```bash
-    npm start
+    gulp server
     ```
 
 1. open your browser at port 3000 => [http://localhost:3000](http://localhost:3000)
 
 ----
-### Directions:
-1. Root page: http://localhost:3000/ 
-    - is where you can view the movies and run the trailers.
+### TESTING THE APP: EITHER USE THE BROWSER OR POSTMAN
+1. BROWSER Root page: http://localhost:3000/ 
+2. IF POSTMAN, PLEASE SEE END-POINTS BELOW 
 
 ----
 # API END-POINTS:
@@ -112,3 +103,25 @@
 ## Login & Authentication
 - ### POST /login
 - ### GET /auth
+
+---
+## SERVER CONFIGURATION SUMMERY:
+- Updated and upgraded the software packages.
+- Added a new User, with sudo access.
+- Activated SSH login.
+- Disabled remote login to root.
+- Ativated the firewall for specific ports and services.
+- Installed and configured Nginx.
+- Hosted the SSh on a non-default port.
+- Installed and configured POSTGRESQL database.
+- Configured the webServer with uwsgi protocol.
+- Install pip Virtualenv, and installed all the required packages within.
+
+---
+
+## THIRD PART RESOURCES USED TO COMPLETE THE PROJECT: 
+- AWS Articles.
+- Udacity Videos.
+- YouTube Toturials.
+- StackOverFlow Answers.
+- various other courses.
