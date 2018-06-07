@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Large Tech Blog</title>
+	<script src="//apis.google.com/js/platform.js?onload=start"> </script>
+    <!-- END PRE-REQUISITES FOR GOOGLE SIGN IN -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+	
+</head>
+<body onload="viewModel.checkLoggedinUser(), viewModel.fetchData()">
+	<!-- Body STARTS HERE -->
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<header class="blog-header py-3">
+					<div 
+						class="row flex-nowrap justify-content-between align-items-center" >
+						<div 
+							class="overflow col-4 d-flex justify-content-start align-items-center">
+							<a 
+								class="btn btn-sm btn-outline-secondary" 
+								href="#"  
+								data-toggle="modal" 
+								data-target="#signinModal" 
+								data-bind="visible: loggedinUser() == false">
+								Sign in
+							</a>
+							<p data-bind="text: username"></p>
+						</div>
+						<div class="col-4 text-center">
+						<a class="blog-header-logo text-dark" href="#">Large</a>
+						</div>
+						<div class="col-4 d-flex justify-content-end align-items-center">
+							<a 
+								class="btn btn-sm btn-outline-secondary" 
+								href="#"
+								data-toggle="modal" 
+								data-target="#signupModal" 
+								data-bind="visible: loggedinUser() == false">
+								Sign up
+							</a>
+							<a 
+								class="btn btn-sm btn-outline-secondary" 
+								href="#"
+								data-bind="click: signout, visible: loggedinUser() == true">
+								Sign out
+							</a>
+						</div>
+					</div>
+				</header>
+			</div>
+		</div>
+
+		<section class="messages">
+			<div class="askToLogIn alert alert-warning" data-bind="visible: loggedinUser() != true">
+				Please <a href="#" data-toggle="modal" data-target="#signinModal">Login</a> to view the tech posts.
+			</div>
+		</section>
+
+		<main data-bind="visible: loggedinUser">
+			<!-- CATEGORIES -->
+			<div class="row categories">
+				<div class="col text-center flex-container">
+					<a href="#" class="btn btn-outline-secondary flex-item" data-bind="click: clearFilter" >All</a>
+					<div class="dynamic-categories flex-item flex-container" data-bind="foreach: categories">
+						<a href="#" class="btn btn-outline-secondary flex-item" data-bind="text:name, click: $parent.filterPosts"></a>
+					</div>
+				</div>
+			</div>
+
+			<!-- ADD POST -->
+			<div class="row add-post">
+				<div class="col">
+					<button 
+						class="btn btn-secondary btn-block btn-lg"
+						data-toggle="modal"
+						data-target="#addPostModal"
+						>Add Post</button>
+				</div>
+			</div>
+
+			<!-- POSTS -->
+			<div class="row posts">
+				<div class="col">
+					<div class="posts-container" data-bind="foreach: posts, visible: !filteredPosts().length">
+						<div class="post mb-5">
+							<h2 class="d-flex">
+								<span  data-bind="text: title"></span>
+								<span class="ml-auto">
+									<a class="mr-3" 
+										data-bind="visible: owner, click: $parent.setPostToEdit"
+										data-toggle="modal"
+										data-target="#editPostModal">
+											<i class="fa fa-edit"></i>
+									</a>
+									<a  data-bind="visible: owner, click: $parent.removePost">
+										<i class="fa fa-trash"></i>
+									</a>
+								</span>
+							</h2>
+							<p data-bind="html: body"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row posts">
+					<div class="col">
+						<div class="posts-container" data-bind="foreach: filteredPosts, visible: filteredPosts().length">
+							<div class="post mb-5">
+								<h2 class="d-flex">
+									<span  data-bind="text: title"></span>
+									<span class="ml-auto">
+										<a class="mr-3" 
+											data-bind="visible: owner, click: $parent.setPostToEdit"
+											data-toggle="modal"
+											data-target="#editPostModal">
+												<i class="fa fa-edit"></i>
+										</a>
+										<a  data-bind="visible: owner, click: $parent.removePost">
+											<i class="fa fa-trash"></i>
+										</a>
+									</span>
+								</h2>
+								<p data-bind="html: body"></p>
+							</div>
+						</div>
+					</div>
+				</div>
+		</main>
+
+
+
+
+	</div>
+	<!-- =========== MODALS =========== -->
+	<!-- SIGNIN -->
+	<form action="" class="form" data-bind="submit: signin" >
+			<div class="modal fade" id="signinModal">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header bg-primary text-white">
+							<h5 class="modal-title">Sign in</h5>
+							<button class="close btn-white text-white" data-dismiss="modal">
+								<span>&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							
+							<div class="form-group">
+								<label for="title">Email</label>
+								<input 
+									type="email" 
+									class="form-control"
+									data-bind="value: signinInputs.email.value, valueUpdate: 'afterkeydown', event: {'keyup': validateSigninInputs.validateEmail, 'blur': validateSigninInputs.validateEmail}"
+								>
+								<!-- VALIDATION ERROR CONTAINER -->
+								<div 
+									class="validation-error alert alert-danger" 
+									data-bind="visible: signinInputs.email.valid() === false">
+									Validation Error
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="password">Password</label>
+								<input 
+									type="password" 
+									class="form-control"
+									data-bind="value: signinInputs.password.value, valueUpdate: 'afterkeydown', event: {'keyup': validateSigninInputs.validatePassword, 'blur': validateSigninInputs.validatePassword}"
+								>
+								<!-- VALIDATION ERROR CONTAINER -->
+								<div 
+									class="validation-error alert alert-danger" 
+									data-bind="visible: signinInputs.password.valid() === false">
+									Validation Error
+								</div>
+								
+							</div>
+							<div >
+								<div class="text-center">OR</div>
+								<!-- GOOGLE PLUS SIGN IN BUTTON-->   
+								<div id="signinButton" class="text-center">
+										<span class="g-signin"
+											data-scope="openid email"
+											data-clientid="1016299865700-esbt9asae9pse8ner0pl0vhp4bv1unb3.apps.googleusercontent.com"
+											data-redirecturi="postmessage"
+											data-accesstype="offline"
+											data-cookiepolicy="single_host_origin"
+											data-callback="GsignInCallback"
+											data-approvalprompt="force">
+											<button class="btn google-custom" type="button"><span>G</span>Login with Google</button>
+										</span>
+									</div>
+	
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+							<button class="btn btn-primary" type="submit">Submit</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+
+		<!-- SIGNUP -->
+	<form action="" class="form" data-bind="submit: signup" >
+			<div class="modal fade" id="signupModal">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header bg-primary text-white">
+							<h5 class="modal-title">Sign up</h5>
+							<button class="close btn-white text-white" data-dismiss="modal">
+								<span>&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+
+								<div class="form-group">
+										<label for="username">Username</label>
+										<input 
+											type="text" 
+											class="form-control"
+											data-bind="value: signupInputs.username.value, valueUpdate: 'afterkeydown', event: {'keyup': validateSignupInputs.validateUsername, 'blur': validateSignupInputs.validateUsername}"
+										>
+										<!-- VALIDATION ERROR CONTAINER -->
+										<div 
+											class="validation-error alert alert-danger" 
+											data-bind="visible: signupInputs.username.valid() === false">
+											Validation Error
+										</div>
+									</div>
+								<div class="form-group">
+									<label for="Email">Email</label>
+									<input 
+										type="email" 
+										class="form-control"
+										data-bind="value: signupInputs.email.value, valueUpdate: 'afterkeydown', event: {'keyup': validateSignupInputs.validateEmail, 'blur': validateSignupInputs.validateEmail}"
+									>
+									<!-- VALIDATION ERROR CONTAINER -->
+									<div 
+										class="validation-error alert alert-danger" 
+										data-bind="visible: signupInputs.email.valid() === false">
+										Validation Error
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="password">Password</label>
+									<input 
+										type="password" 
+										class="form-control"
+										data-bind="value: signupInputs.password.value, valueUpdate: 'afterkeydown', event: {'keyup': validateSignupInputs.validatePassword, 'blur': validateSignupInputs.validatePassword}"
+									>
+									<!-- VALIDATION ERROR CONTAINER -->
+									<div 
+										class="validation-error alert alert-danger" 
+										data-bind="visible: signupInputs.password.valid() === false">
+										Validation Error
+									</div>
+									
+								</div>
+								<div class="text-center">
+									<div class="text-center">OR</div>
+									<!-- GOOGLE PLUS SIGN IN BUTTON-->   
+									<div id="signinButton" class="text-center">
+											<span class="g-signin"
+												data-scope="openid email"
+												data-clientid="1016299865700-esbt9asae9pse8ner0pl0vhp4bv1unb3.apps.googleusercontent.com"
+												data-redirecturi="postmessage"
+												data-accesstype="offline"
+												data-cookiepolicy="single_host_origin"
+												data-callback="GsignInCallback"
+												data-approvalprompt="force">
+												<button class="btn google-custom" type="button"><span>G</span>Login with Google</button>
+											</span>
+										</div>
+								</div>
+						</div>
+						<div class="modal-footer">
+							<button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+							<button class="btn btn-primary" type="submit">Submit</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+
+		<!-- ADDPOST -->
+		<form action="" class="form" data-bind="submit: addPost" >
+			<div class="modal fade" id="addPostModal">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header bg-primary text-white">
+							<h5 class="modal-title">Add Post</h5>
+							<button class="close btn-white text-white" data-dismiss="modal">
+								<span>&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+								<div class="form-group">
+									<label for="category">Category</label>
+									<select 
+										name="category" 
+										id="category" 
+										class="form-control"
+										data-bind="options: categories, optionsText: 'name', optionsValue: 'id', optionsCaption: 'choose...', value: addPostInputs.category.value, events: {'blue': validateAddPostInputs.validateCategory}">
+											
+									</select>
+									<!-- VALIDATION ERROR CONTAINER -->
+									<div 
+										class="validation-error alert alert-danger" 
+										data-bind="visible: addPostInputs.category.valid() === false">
+										Validation Error
+									</div>
+									
+								</div>
+								<div class="form-group">
+										<label for="title">Title</label>
+										<input 
+											type="text" 
+											class="form-control"
+											data-bind="value: addPostInputs.title.value, valueUpdate: 'afterkeydown', event: {'keyup': validateAddPostInputs.validateTitle, 'blur': validateAddPostInputs.validateTitle}"
+										>
+										<!-- VALIDATION ERROR CONTAINER -->
+										<div 
+											class="validation-error alert alert-danger" 
+											data-bind="visible: addPostInputs.title.valid() === false">
+											Validation Error
+										</div>
+									</div>
+								<div class="form-group">
+									<label for="body">Body</label>
+									<textarea 
+										id="addPostBody"
+										name="editor1"
+										class="form-control"
+										data-bind="value: addPostInputs.body.value, valueUpdate: 'afterkeydown', event: {'keyup': validateAddPostInputs.validateBody, 'blur': validateAddPostInputs.validateBody}"
+									>
+									</textarea>
+									<!-- VALIDATION ERROR CONTAINER -->
+									<div 
+										class="validation-error alert alert-danger" 
+										data-bind="visible: addPostInputs.body.valid() === false">
+										Validation Error, Need 20 chars at least 
+									</div>
+								</div>
+							</div>
+						<div class="modal-footer">
+							<button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+							<button class="btn btn-primary" type="submit">Submit</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+
+
+		<!-- Edit Post Modal -->
+		<form action="" class="form" data-bind="submit: editPost" >
+				<div class="modal fade" id="editPostModal">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header bg-primary text-white">
+								<h5 class="modal-title">Edit Post</h5>
+								<button class="close btn-white text-white" data-dismiss="modal">
+									<span>&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+									<div class="form-group">
+										<label for="category">Category</label>
+										<select 
+											name="editCategory" 
+											id="editCategory" 
+											class="form-control"
+											data-bind="options: categories, optionsText: 'name', optionsValue: 'id', optionsCaption: 'choose...', value: postToEditInputs.category.value, events: {'blue': validateAddPostInputs.validateCategory}">
+												
+										</select>
+										<!-- VALIDATION ERROR CONTAINER -->
+										<div 
+											class="validation-error alert alert-danger" 
+											data-bind="visible: postToEditInputs.category.valid() === false">
+											Validation Error
+										</div>
+										
+									</div>
+									<div class="form-group">
+											<label for="title">Title</label>
+											<input 
+												type="text" 
+												class="form-control"
+												data-bind="value: postToEditInputs.title.value, valueUpdate: 'afterkeydown', event: {'keyup': validatePostToEditInputs.validateTitle, 'blur': validatePostToEditInputs.validateTitle}"
+											>
+											<!-- VALIDATION ERROR CONTAINER -->
+											<div 
+												class="validation-error alert alert-danger" 
+												data-bind="visible: postToEditInputs.title.valid() === false">
+												Validation Error
+											</div>
+										</div>
+									<div class="form-group">
+										<label for="body">Body</label>
+										<textarea 
+											id="editPostBody"
+											name="editor2"
+											class="form-control"
+											data-bind="value: postToEditInputs.body.value, text: postToEditInputs.body.value, valueUpdate: 'afterkeydown', event: {'keyup': validatePostToEditInputs.validateBody, 'blur': validatePostToEditInputs.validateBody}"
+										>
+										</textarea>
+										<!-- VALIDATION ERROR CONTAINER -->
+										<div 
+											class="validation-error alert alert-danger" 
+											data-bind="visible: postToEditInputs.body.valid() === false">
+											Validation Error, Need 20 chars at least 
+										</div>
+									</div>
+								</div>
+							<div class="modal-footer">
+								<button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+								<button class="btn btn-primary" type="submit">Submit</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+
+	<!-- Body ENDS HERE -->
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/popper.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="https://cdn.ckeditor.com/4.9.2/standard/ckeditor.js"></script>
+	<script>
+			CKEDITOR.replace( 'editor1' );
+	</script>
+	<script src="./js/knockout-latest.js"></script>
+	<script src="./js/main.js"></script>
+	
+	
+</body>
+</html>
